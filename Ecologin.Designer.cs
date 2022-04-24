@@ -54,18 +54,20 @@ namespace Ecolog
             // usernameLabel
             // 
             this.usernameLabel.AutoSize = true;
-            this.usernameLabel.Location = new System.Drawing.Point(146, 92);
+            this.usernameLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLabel.Location = new System.Drawing.Point(125, 93);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(55, 13);
+            this.usernameLabel.Size = new System.Drawing.Size(67, 16);
             this.usernameLabel.TabIndex = 1;
             this.usernameLabel.Text = "Username";
             // 
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
-            this.passwordLabel.Location = new System.Drawing.Point(146, 121);
+            this.passwordLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordLabel.Location = new System.Drawing.Point(125, 122);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(53, 13);
+            this.passwordLabel.Size = new System.Drawing.Size(65, 16);
             this.passwordLabel.TabIndex = 2;
             this.passwordLabel.Text = "Password";
             // 
@@ -79,53 +81,68 @@ namespace Ecolog
             // passwordTB
             // 
             this.passwordTB.Location = new System.Drawing.Point(198, 118);
+            this.passwordTB.MaxLength = 32;
             this.passwordTB.Name = "passwordTB";
             this.passwordTB.Size = new System.Drawing.Size(100, 20);
             this.passwordTB.TabIndex = 4;
+            this.passwordTB.UseSystemPasswordChar = true;
             // 
             // loginButton
             // 
+            this.loginButton.BackColor = System.Drawing.SystemColors.Control;
+            this.loginButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginButton.ForeColor = System.Drawing.Color.Navy;
             this.loginButton.Location = new System.Drawing.Point(77, 167);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(75, 23);
             this.loginButton.TabIndex = 5;
             this.loginButton.Text = "Login";
-            this.loginButton.UseVisualStyleBackColor = true;
+            this.loginButton.UseVisualStyleBackColor = false;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
             // registerBtn
             // 
+            this.registerBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.registerBtn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registerBtn.ForeColor = System.Drawing.Color.Navy;
             this.registerBtn.Location = new System.Drawing.Point(159, 167);
             this.registerBtn.Name = "registerBtn";
             this.registerBtn.Size = new System.Drawing.Size(75, 23);
             this.registerBtn.TabIndex = 6;
             this.registerBtn.Text = "Register";
-            this.registerBtn.UseVisualStyleBackColor = true;
+            this.registerBtn.UseVisualStyleBackColor = false;
             this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click);
             // 
             // forgotBtn
             // 
+            this.forgotBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.forgotBtn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.forgotBtn.ForeColor = System.Drawing.Color.Navy;
             this.forgotBtn.Location = new System.Drawing.Point(241, 167);
             this.forgotBtn.Name = "forgotBtn";
             this.forgotBtn.Size = new System.Drawing.Size(75, 23);
             this.forgotBtn.TabIndex = 7;
             this.forgotBtn.Text = "Forgot Password";
-            this.forgotBtn.UseVisualStyleBackColor = true;
+            this.forgotBtn.UseVisualStyleBackColor = false;
             // 
             // exitBtn
             // 
+            this.exitBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.exitBtn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitBtn.ForeColor = System.Drawing.Color.Navy;
             this.exitBtn.Location = new System.Drawing.Point(323, 167);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(75, 23);
             this.exitBtn.TabIndex = 8;
             this.exitBtn.Text = "E&xit";
-            this.exitBtn.UseVisualStyleBackColor = true;
+            this.exitBtn.UseVisualStyleBackColor = false;
             this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // Ecologin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(484, 211);
             this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.forgotBtn);
@@ -136,6 +153,7 @@ namespace Ecolog
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.usernameLabel);
             this.Controls.Add(this.titleLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MinimumSize = new System.Drawing.Size(500, 200);
             this.Name = "Ecologin";
             this.Text = "Ecologin";

@@ -5,17 +5,17 @@ namespace Ecolog
 {
     public partial class EcoJourney : Form
     {
-        String username = "Testuser";
+        String username;
         String password;
-        String email = "Testmail@test.local";
-        String firstName = "Test";
-        String lastName = "User";
-        String zipCode = "00000";
-        String total = "100.00";
-        String entries = "52";
-        String currentLog = "2.08";
-        String avgPrint = "1.92";
-        String offset = "0.16";
+        String email;
+        String firstName;
+        String lastName;
+        String zipCode;
+        String total;
+        String entries;
+        String currentLog;
+        String avgPrint;
+        String offset;
         public EcoJourney()
         {
             InitializeComponent();
@@ -26,7 +26,7 @@ namespace Ecolog
             lastNameResult.Text = lastName;
             totalResult.Text = total;
             averageResult.Text = avgPrint;
-            currentFootprintResult.Text = currentLog;
+            lastLogRslt.Text = currentLog;
             differenceResult.Text = offset;
 
         }
@@ -36,7 +36,7 @@ namespace Ecolog
             this.Hide();
             EcoJournal toJournal = new EcoJournal();
             toJournal.ShowDialog();
-            this.Close();
+            
         }
         // Goes to Login Screen
         private void logOutBtn_Click(object sender, EventArgs e)
@@ -45,6 +45,22 @@ namespace Ecolog
             Ecologin toLogin = new Ecologin();
             toLogin.ShowDialog();
             this.Close();
+        }
+
+        private void ecoSpherebtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            EcoSphere toSphere = new EcoSphere();
+            toSphere.ShowDialog();
+        }
+        /// <summary>
+        /// Goes to update page
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void updateAccountbtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

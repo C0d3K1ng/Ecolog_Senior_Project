@@ -20,9 +20,24 @@ namespace Ecolog
         //Turns Database Row into Class
         public int id { get; set; }
         public String Username { get; set; }
+        public String Password { get; set; }
         public String email { get; set; }
-        public String firstname { get; set; }
+        public String firstName { get; set; }
         public String lastName { get; set; }
         public String zipCode { get; set;  }
+        /// <summary>
+        /// Returns info on user
+        /// </summary>
+        public string FullInfo
+        {
+            get
+            {
+                // Get all of a users info
+                return $"{Username}{Password}({email}){firstName}{lastName}{zipCode}";
+
+            }
+            
+        
+         }
     }
 }

@@ -35,11 +35,10 @@ namespace Ecolog
             this.firstNameResult = new System.Windows.Forms.Label();
             this.passwordResult = new System.Windows.Forms.Label();
             this.userResult = new System.Windows.Forms.Label();
-            this.currentFootprintResult = new System.Windows.Forms.Label();
+            this.lastLogRslt = new System.Windows.Forms.Label();
             this.differenceResult = new System.Windows.Forms.Label();
             this.averageResult = new System.Windows.Forms.Label();
             this.totalResult = new System.Windows.Forms.Label();
-            this.userStatResult = new System.Windows.Forms.Label();
             this.logOutBtn = new System.Windows.Forms.Button();
             this.updateAccountbtn = new System.Windows.Forms.Button();
             this.ecoSpherebtn = new System.Windows.Forms.Button();
@@ -52,26 +51,29 @@ namespace Ecolog
             this.userInfoLbl = new System.Windows.Forms.Label();
             this.avgLbl = new System.Windows.Forms.Label();
             this.diffLbl = new System.Windows.Forms.Label();
-            this.currentLogLbl = new System.Windows.Forms.Label();
+            this.lastLogLbl = new System.Windows.Forms.Label();
             this.totalLbl = new System.Windows.Forms.Label();
             this.userStatLbl = new System.Windows.Forms.Label();
             this.welcomeLbl = new System.Windows.Forms.Label();
             this.titleLbl = new System.Windows.Forms.Label();
+            this.entriesResult = new System.Windows.Forms.Label();
+            this.entriesLbl = new System.Windows.Forms.Label();
             this.ecoJourneyGBX.SuspendLayout();
             this.SuspendLayout();
             // 
             // ecoJourneyGBX
             // 
+            this.ecoJourneyGBX.Controls.Add(this.entriesResult);
+            this.ecoJourneyGBX.Controls.Add(this.entriesLbl);
             this.ecoJourneyGBX.Controls.Add(this.emailResult);
             this.ecoJourneyGBX.Controls.Add(this.lastNameResult);
             this.ecoJourneyGBX.Controls.Add(this.firstNameResult);
             this.ecoJourneyGBX.Controls.Add(this.passwordResult);
             this.ecoJourneyGBX.Controls.Add(this.userResult);
-            this.ecoJourneyGBX.Controls.Add(this.currentFootprintResult);
+            this.ecoJourneyGBX.Controls.Add(this.lastLogRslt);
             this.ecoJourneyGBX.Controls.Add(this.differenceResult);
             this.ecoJourneyGBX.Controls.Add(this.averageResult);
             this.ecoJourneyGBX.Controls.Add(this.totalResult);
-            this.ecoJourneyGBX.Controls.Add(this.userStatResult);
             this.ecoJourneyGBX.Controls.Add(this.logOutBtn);
             this.ecoJourneyGBX.Controls.Add(this.updateAccountbtn);
             this.ecoJourneyGBX.Controls.Add(this.ecoSpherebtn);
@@ -84,7 +86,7 @@ namespace Ecolog
             this.ecoJourneyGBX.Controls.Add(this.userInfoLbl);
             this.ecoJourneyGBX.Controls.Add(this.avgLbl);
             this.ecoJourneyGBX.Controls.Add(this.diffLbl);
-            this.ecoJourneyGBX.Controls.Add(this.currentLogLbl);
+            this.ecoJourneyGBX.Controls.Add(this.lastLogLbl);
             this.ecoJourneyGBX.Controls.Add(this.totalLbl);
             this.ecoJourneyGBX.Controls.Add(this.userStatLbl);
             this.ecoJourneyGBX.Controls.Add(this.welcomeLbl);
@@ -99,83 +101,119 @@ namespace Ecolog
             // emailResult
             // 
             this.emailResult.AutoSize = true;
-            this.emailResult.Location = new System.Drawing.Point(96, 253);
+            this.emailResult.BackColor = System.Drawing.SystemColors.Control;
+            this.emailResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.emailResult.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailResult.Location = new System.Drawing.Point(573, 242);
+            this.emailResult.MaximumSize = new System.Drawing.Size(200, 20);
+            this.emailResult.MinimumSize = new System.Drawing.Size(100, 20);
             this.emailResult.Name = "emailResult";
-            this.emailResult.Size = new System.Drawing.Size(0, 13);
+            this.emailResult.Size = new System.Drawing.Size(100, 20);
             this.emailResult.TabIndex = 27;
+            this.emailResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lastNameResult
             // 
             this.lastNameResult.AutoSize = true;
-            this.lastNameResult.Location = new System.Drawing.Point(91, 230);
+            this.lastNameResult.BackColor = System.Drawing.SystemColors.Control;
+            this.lastNameResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lastNameResult.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastNameResult.Location = new System.Drawing.Point(443, 242);
+            this.lastNameResult.MaximumSize = new System.Drawing.Size(200, 20);
+            this.lastNameResult.MinimumSize = new System.Drawing.Size(100, 20);
             this.lastNameResult.Name = "lastNameResult";
-            this.lastNameResult.Size = new System.Drawing.Size(0, 13);
+            this.lastNameResult.Size = new System.Drawing.Size(100, 20);
             this.lastNameResult.TabIndex = 26;
+            this.lastNameResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // firstNameResult
             // 
-            this.firstNameResult.AutoSize = true;
-            this.firstNameResult.Location = new System.Drawing.Point(91, 208);
+            this.firstNameResult.BackColor = System.Drawing.SystemColors.Control;
+            this.firstNameResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.firstNameResult.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstNameResult.Location = new System.Drawing.Point(313, 242);
+            this.firstNameResult.MaximumSize = new System.Drawing.Size(200, 20);
+            this.firstNameResult.MinimumSize = new System.Drawing.Size(100, 20);
             this.firstNameResult.Name = "firstNameResult";
-            this.firstNameResult.Size = new System.Drawing.Size(0, 13);
+            this.firstNameResult.Size = new System.Drawing.Size(100, 20);
             this.firstNameResult.TabIndex = 25;
+            this.firstNameResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // passwordResult
             // 
             this.passwordResult.AutoSize = true;
-            this.passwordResult.Location = new System.Drawing.Point(91, 184);
+            this.passwordResult.BackColor = System.Drawing.SystemColors.Control;
+            this.passwordResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.passwordResult.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordResult.Location = new System.Drawing.Point(183, 242);
+            this.passwordResult.MaximumSize = new System.Drawing.Size(200, 20);
+            this.passwordResult.MinimumSize = new System.Drawing.Size(100, 20);
             this.passwordResult.Name = "passwordResult";
-            this.passwordResult.Size = new System.Drawing.Size(35, 13);
+            this.passwordResult.Size = new System.Drawing.Size(100, 20);
             this.passwordResult.TabIndex = 24;
             this.passwordResult.Text = "*******";
+            this.passwordResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // userResult
             // 
-            this.userResult.AutoSize = true;
-            this.userResult.Location = new System.Drawing.Point(93, 160);
+            this.userResult.BackColor = System.Drawing.SystemColors.Control;
+            this.userResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.userResult.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userResult.Location = new System.Drawing.Point(53, 242);
+            this.userResult.MaximumSize = new System.Drawing.Size(200, 20);
+            this.userResult.MinimumSize = new System.Drawing.Size(100, 20);
             this.userResult.Name = "userResult";
-            this.userResult.Size = new System.Drawing.Size(0, 13);
+            this.userResult.Size = new System.Drawing.Size(100, 20);
             this.userResult.TabIndex = 23;
+            this.userResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // currentFootprintResult
+            // lastLogRslt
             // 
-            this.currentFootprintResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.currentFootprintResult.Location = new System.Drawing.Point(529, 97);
-            this.currentFootprintResult.Name = "currentFootprintResult";
-            this.currentFootprintResult.Size = new System.Drawing.Size(76, 15);
-            this.currentFootprintResult.TabIndex = 21;
+            this.lastLogRslt.BackColor = System.Drawing.SystemColors.Control;
+            this.lastLogRslt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lastLogRslt.Location = new System.Drawing.Point(443, 129);
+            this.lastLogRslt.MaximumSize = new System.Drawing.Size(200, 20);
+            this.lastLogRslt.MinimumSize = new System.Drawing.Size(50, 20);
+            this.lastLogRslt.Name = "lastLogRslt";
+            this.lastLogRslt.Size = new System.Drawing.Size(100, 20);
+            this.lastLogRslt.TabIndex = 21;
+            this.lastLogRslt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // differenceResult
             // 
+            this.differenceResult.BackColor = System.Drawing.SystemColors.Control;
             this.differenceResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.differenceResult.Location = new System.Drawing.Point(390, 97);
+            this.differenceResult.Location = new System.Drawing.Point(573, 129);
+            this.differenceResult.MaximumSize = new System.Drawing.Size(200, 20);
+            this.differenceResult.MinimumSize = new System.Drawing.Size(50, 20);
             this.differenceResult.Name = "differenceResult";
-            this.differenceResult.Size = new System.Drawing.Size(41, 15);
+            this.differenceResult.Size = new System.Drawing.Size(100, 20);
             this.differenceResult.TabIndex = 20;
+            this.differenceResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // averageResult
             // 
+            this.averageResult.BackColor = System.Drawing.SystemColors.Control;
             this.averageResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.averageResult.Location = new System.Drawing.Point(280, 97);
+            this.averageResult.Location = new System.Drawing.Point(313, 129);
+            this.averageResult.MaximumSize = new System.Drawing.Size(200, 20);
+            this.averageResult.MinimumSize = new System.Drawing.Size(50, 20);
             this.averageResult.Name = "averageResult";
-            this.averageResult.Size = new System.Drawing.Size(41, 15);
+            this.averageResult.Size = new System.Drawing.Size(100, 20);
             this.averageResult.TabIndex = 19;
+            this.averageResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // totalResult
             // 
+            this.totalResult.BackColor = System.Drawing.SystemColors.Control;
             this.totalResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.totalResult.Location = new System.Drawing.Point(169, 97);
+            this.totalResult.Location = new System.Drawing.Point(53, 129);
+            this.totalResult.MaximumSize = new System.Drawing.Size(200, 20);
+            this.totalResult.MinimumSize = new System.Drawing.Size(50, 20);
             this.totalResult.Name = "totalResult";
-            this.totalResult.Size = new System.Drawing.Size(51, 15);
+            this.totalResult.Size = new System.Drawing.Size(100, 20);
             this.totalResult.TabIndex = 18;
-            // 
-            // userStatResult
-            // 
-            this.userStatResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.userStatResult.Location = new System.Drawing.Point(85, 97);
-            this.userStatResult.Name = "userStatResult";
-            this.userStatResult.Size = new System.Drawing.Size(41, 15);
-            this.userStatResult.TabIndex = 17;
+            this.totalResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // logOutBtn
             // 
@@ -195,6 +233,7 @@ namespace Ecolog
             this.updateAccountbtn.TabIndex = 15;
             this.updateAccountbtn.Text = "Update Account";
             this.updateAccountbtn.UseVisualStyleBackColor = true;
+            this.updateAccountbtn.Click += new System.EventHandler(this.updateAccountbtn_Click);
             // 
             // ecoSpherebtn
             // 
@@ -204,7 +243,7 @@ namespace Ecolog
             this.ecoSpherebtn.TabIndex = 14;
             this.ecoSpherebtn.Text = "EcoSphere";
             this.ecoSpherebtn.UseVisualStyleBackColor = true;
-            this.ecoSpherebtn.Visible = false;
+            this.ecoSpherebtn.Click += new System.EventHandler(this.ecoSpherebtn_Click);
             // 
             // ecoJournalBtn
             // 
@@ -219,126 +258,164 @@ namespace Ecolog
             // emailLbl
             // 
             this.emailLbl.AutoSize = true;
-            this.emailLbl.Location = new System.Drawing.Point(31, 254);
+            this.emailLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailLbl.Location = new System.Drawing.Point(592, 206);
             this.emailLbl.Name = "emailLbl";
-            this.emailLbl.Size = new System.Drawing.Size(32, 13);
+            this.emailLbl.Size = new System.Drawing.Size(41, 16);
             this.emailLbl.TabIndex = 12;
             this.emailLbl.Text = "Email";
             // 
             // usernameLbl
             // 
             this.usernameLbl.AutoSize = true;
-            this.usernameLbl.Location = new System.Drawing.Point(31, 160);
+            this.usernameLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLbl.Location = new System.Drawing.Point(78, 206);
             this.usernameLbl.Name = "usernameLbl";
-            this.usernameLbl.Size = new System.Drawing.Size(55, 13);
+            this.usernameLbl.Size = new System.Drawing.Size(67, 16);
             this.usernameLbl.TabIndex = 11;
             this.usernameLbl.Text = "Username";
             // 
             // lastNameLbl
             // 
             this.lastNameLbl.AutoSize = true;
-            this.lastNameLbl.Location = new System.Drawing.Point(31, 230);
+            this.lastNameLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastNameLbl.Location = new System.Drawing.Point(459, 206);
             this.lastNameLbl.Name = "lastNameLbl";
-            this.lastNameLbl.Size = new System.Drawing.Size(58, 13);
+            this.lastNameLbl.Size = new System.Drawing.Size(71, 16);
             this.lastNameLbl.TabIndex = 10;
             this.lastNameLbl.Text = "Last Name";
             // 
             // firstNameLbl
             // 
             this.firstNameLbl.AutoSize = true;
-            this.firstNameLbl.Location = new System.Drawing.Point(31, 208);
+            this.firstNameLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstNameLbl.Location = new System.Drawing.Point(324, 206);
             this.firstNameLbl.Name = "firstNameLbl";
-            this.firstNameLbl.Size = new System.Drawing.Size(57, 13);
+            this.firstNameLbl.Size = new System.Drawing.Size(72, 16);
             this.firstNameLbl.TabIndex = 9;
             this.firstNameLbl.Text = "First Name";
             // 
             // passwordLbl
             // 
             this.passwordLbl.AutoSize = true;
-            this.passwordLbl.Location = new System.Drawing.Point(31, 184);
+            this.passwordLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordLbl.Location = new System.Drawing.Point(202, 206);
             this.passwordLbl.Name = "passwordLbl";
-            this.passwordLbl.Size = new System.Drawing.Size(53, 13);
+            this.passwordLbl.Size = new System.Drawing.Size(65, 16);
             this.passwordLbl.TabIndex = 8;
             this.passwordLbl.Text = "Password";
             // 
             // userInfoLbl
             // 
             this.userInfoLbl.AutoSize = true;
-            this.userInfoLbl.Location = new System.Drawing.Point(63, 130);
+            this.userInfoLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userInfoLbl.Location = new System.Drawing.Point(306, 160);
             this.userInfoLbl.Name = "userInfoLbl";
-            this.userInfoLbl.Size = new System.Drawing.Size(50, 13);
+            this.userInfoLbl.Size = new System.Drawing.Size(78, 19);
             this.userInfoLbl.TabIndex = 7;
             this.userInfoLbl.Text = "User Info";
             // 
             // avgLbl
             // 
             this.avgLbl.AutoSize = true;
-            this.avgLbl.Location = new System.Drawing.Point(226, 97);
+            this.avgLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.avgLbl.Location = new System.Drawing.Point(324, 104);
             this.avgLbl.Name = "avgLbl";
-            this.avgLbl.Size = new System.Drawing.Size(47, 13);
+            this.avgLbl.Size = new System.Drawing.Size(54, 16);
             this.avgLbl.TabIndex = 6;
             this.avgLbl.Text = "Average";
             // 
             // diffLbl
             // 
             this.diffLbl.AutoSize = true;
-            this.diffLbl.Location = new System.Drawing.Point(327, 97);
+            this.diffLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diffLbl.Location = new System.Drawing.Point(592, 104);
             this.diffLbl.Name = "diffLbl";
-            this.diffLbl.Size = new System.Drawing.Size(56, 13);
+            this.diffLbl.Size = new System.Drawing.Size(65, 16);
             this.diffLbl.TabIndex = 5;
             this.diffLbl.Text = "Difference";
             // 
-            // currentLogLbl
+            // lastLogLbl
             // 
-            this.currentLogLbl.AutoSize = true;
-            this.currentLogLbl.Location = new System.Drawing.Point(437, 97);
-            this.currentLogLbl.Name = "currentLogLbl";
-            this.currentLogLbl.Size = new System.Drawing.Size(85, 13);
-            this.currentLogLbl.TabIndex = 4;
-            this.currentLogLbl.Text = "Current Footprint";
+            this.lastLogLbl.AutoSize = true;
+            this.lastLogLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastLogLbl.Location = new System.Drawing.Point(459, 104);
+            this.lastLogLbl.Name = "lastLogLbl";
+            this.lastLogLbl.Size = new System.Drawing.Size(58, 16);
+            this.lastLogLbl.TabIndex = 4;
+            this.lastLogLbl.Text = "Last Log";
             // 
             // totalLbl
             // 
             this.totalLbl.AutoSize = true;
-            this.totalLbl.Location = new System.Drawing.Point(141, 97);
+            this.totalLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalLbl.Location = new System.Drawing.Point(91, 104);
             this.totalLbl.Name = "totalLbl";
-            this.totalLbl.Size = new System.Drawing.Size(31, 13);
+            this.totalLbl.Size = new System.Drawing.Size(35, 16);
             this.totalLbl.TabIndex = 3;
             this.totalLbl.Text = "Total";
             // 
             // userStatLbl
             // 
             this.userStatLbl.AutoSize = true;
-            this.userStatLbl.Location = new System.Drawing.Point(31, 97);
+            this.userStatLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userStatLbl.Location = new System.Drawing.Point(297, 74);
             this.userStatLbl.Name = "userStatLbl";
-            this.userStatLbl.Size = new System.Drawing.Size(56, 13);
+            this.userStatLbl.Size = new System.Drawing.Size(88, 19);
             this.userStatLbl.TabIndex = 2;
             this.userStatLbl.Text = "User Stats";
             // 
             // welcomeLbl
             // 
             this.welcomeLbl.AutoSize = true;
-            this.welcomeLbl.Location = new System.Drawing.Point(286, 61);
+            this.welcomeLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.welcomeLbl.Location = new System.Drawing.Point(307, 43);
             this.welcomeLbl.Name = "welcomeLbl";
-            this.welcomeLbl.Size = new System.Drawing.Size(52, 13);
+            this.welcomeLbl.Size = new System.Drawing.Size(63, 16);
             this.welcomeLbl.TabIndex = 1;
             this.welcomeLbl.Text = "Welcome";
             // 
             // titleLbl
             // 
             this.titleLbl.AutoSize = true;
-            this.titleLbl.Location = new System.Drawing.Point(323, 20);
+            this.titleLbl.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLbl.ForeColor = System.Drawing.Color.Lime;
+            this.titleLbl.Location = new System.Drawing.Point(261, 11);
             this.titleLbl.Name = "titleLbl";
-            this.titleLbl.Size = new System.Drawing.Size(63, 13);
+            this.titleLbl.Size = new System.Drawing.Size(172, 32);
             this.titleLbl.TabIndex = 0;
             this.titleLbl.Text = "EcoJourney";
+            // 
+            // entriesResult
+            // 
+            this.entriesResult.BackColor = System.Drawing.SystemColors.Control;
+            this.entriesResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.entriesResult.Location = new System.Drawing.Point(183, 129);
+            this.entriesResult.MaximumSize = new System.Drawing.Size(200, 20);
+            this.entriesResult.MinimumSize = new System.Drawing.Size(50, 20);
+            this.entriesResult.Name = "entriesResult";
+            this.entriesResult.Size = new System.Drawing.Size(100, 20);
+            this.entriesResult.TabIndex = 29;
+            this.entriesResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // entriesLbl
+            // 
+            this.entriesLbl.AutoSize = true;
+            this.entriesLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.entriesLbl.Location = new System.Drawing.Point(202, 104);
+            this.entriesLbl.Name = "entriesLbl";
+            this.entriesLbl.Size = new System.Drawing.Size(49, 16);
+            this.entriesLbl.TabIndex = 28;
+            this.entriesLbl.Text = "Entries";
             // 
             // EcoJourney
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(799, 413);
+            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.ClientSize = new System.Drawing.Size(784, 411);
             this.Controls.Add(this.ecoJourneyGBX);
+            this.MinimumSize = new System.Drawing.Size(800, 450);
             this.Name = "EcoJourney";
             this.Text = "EcoJourney";
             this.ecoJourneyGBX.ResumeLayout(false);
@@ -359,7 +436,7 @@ namespace Ecolog
         private System.Windows.Forms.Label userInfoLbl;
         private System.Windows.Forms.Label avgLbl;
         private System.Windows.Forms.Label diffLbl;
-        private System.Windows.Forms.Label currentLogLbl;
+        private System.Windows.Forms.Label lastLogLbl;
         private System.Windows.Forms.Label totalLbl;
         private System.Windows.Forms.Label userStatLbl;
         private System.Windows.Forms.Label welcomeLbl;
@@ -372,10 +449,11 @@ namespace Ecolog
         private System.Windows.Forms.Label firstNameResult;
         private System.Windows.Forms.Label passwordResult;
         private System.Windows.Forms.Label userResult;
-        private System.Windows.Forms.Label currentFootprintResult;
+        private System.Windows.Forms.Label lastLogRslt;
         private System.Windows.Forms.Label differenceResult;
         private System.Windows.Forms.Label averageResult;
         private System.Windows.Forms.Label totalResult;
-        private System.Windows.Forms.Label userStatResult;
+        private System.Windows.Forms.Label entriesResult;
+        private System.Windows.Forms.Label entriesLbl;
     }
 }
