@@ -38,6 +38,7 @@ namespace Ecolog
             this.registerBtn = new System.Windows.Forms.Button();
             this.forgotBtn = new System.Windows.Forms.Button();
             this.exitBtn = new System.Windows.Forms.Button();
+            this.msgLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -45,7 +46,7 @@ namespace Ecolog
             this.titleLabel.AutoSize = true;
             this.titleLabel.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.ForeColor = System.Drawing.Color.SeaGreen;
-            this.titleLabel.Location = new System.Drawing.Point(191, 52);
+            this.titleLabel.Location = new System.Drawing.Point(193, 33);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(123, 37);
             this.titleLabel.TabIndex = 0;
@@ -54,33 +55,35 @@ namespace Ecolog
             // usernameLabel
             // 
             this.usernameLabel.AutoSize = true;
-            this.usernameLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameLabel.Location = new System.Drawing.Point(125, 93);
+            this.usernameLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLabel.ForeColor = System.Drawing.Color.SeaGreen;
+            this.usernameLabel.Location = new System.Drawing.Point(127, 74);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(67, 16);
+            this.usernameLabel.Size = new System.Drawing.Size(72, 16);
             this.usernameLabel.TabIndex = 1;
             this.usernameLabel.Text = "Username";
             // 
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
-            this.passwordLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordLabel.Location = new System.Drawing.Point(125, 122);
+            this.passwordLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordLabel.ForeColor = System.Drawing.Color.SeaGreen;
+            this.passwordLabel.Location = new System.Drawing.Point(127, 103);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(65, 16);
+            this.passwordLabel.Size = new System.Drawing.Size(69, 16);
             this.passwordLabel.TabIndex = 2;
             this.passwordLabel.Text = "Password";
             // 
             // usernameTB
             // 
-            this.usernameTB.Location = new System.Drawing.Point(198, 92);
+            this.usernameTB.Location = new System.Drawing.Point(200, 73);
             this.usernameTB.Name = "usernameTB";
             this.usernameTB.Size = new System.Drawing.Size(100, 20);
             this.usernameTB.TabIndex = 3;
             // 
             // passwordTB
             // 
-            this.passwordTB.Location = new System.Drawing.Point(198, 118);
+            this.passwordTB.Location = new System.Drawing.Point(200, 99);
             this.passwordTB.MaxLength = 32;
             this.passwordTB.Name = "passwordTB";
             this.passwordTB.Size = new System.Drawing.Size(100, 20);
@@ -96,7 +99,7 @@ namespace Ecolog
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(75, 23);
             this.loginButton.TabIndex = 5;
-            this.loginButton.Text = "Login";
+            this.loginButton.Text = "Log&in";
             this.loginButton.UseVisualStyleBackColor = false;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
@@ -109,7 +112,7 @@ namespace Ecolog
             this.registerBtn.Name = "registerBtn";
             this.registerBtn.Size = new System.Drawing.Size(75, 23);
             this.registerBtn.TabIndex = 6;
-            this.registerBtn.Text = "Register";
+            this.registerBtn.Text = "Re&gister";
             this.registerBtn.UseVisualStyleBackColor = false;
             this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click);
             // 
@@ -124,6 +127,7 @@ namespace Ecolog
             this.forgotBtn.TabIndex = 7;
             this.forgotBtn.Text = "Forgot Password";
             this.forgotBtn.UseVisualStyleBackColor = false;
+            this.forgotBtn.Click += new System.EventHandler(this.forgotBtn_Click);
             // 
             // exitBtn
             // 
@@ -138,12 +142,25 @@ namespace Ecolog
             this.exitBtn.UseVisualStyleBackColor = false;
             this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
+            // msgLbl
+            // 
+            this.msgLbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.msgLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.msgLbl.ForeColor = System.Drawing.Color.Red;
+            this.msgLbl.Location = new System.Drawing.Point(108, 144);
+            this.msgLbl.MaximumSize = new System.Drawing.Size(300, 30);
+            this.msgLbl.MinimumSize = new System.Drawing.Size(250, 20);
+            this.msgLbl.Name = "msgLbl";
+            this.msgLbl.Size = new System.Drawing.Size(250, 20);
+            this.msgLbl.TabIndex = 9;
+            // 
             // Ecologin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(484, 211);
+            this.Controls.Add(this.msgLbl);
             this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.forgotBtn);
             this.Controls.Add(this.registerBtn);
@@ -173,5 +190,6 @@ namespace Ecolog
         private System.Windows.Forms.Button registerBtn;
         private System.Windows.Forms.Button forgotBtn;
         private System.Windows.Forms.Button exitBtn;
+        private System.Windows.Forms.Label msgLbl;
     }
 }

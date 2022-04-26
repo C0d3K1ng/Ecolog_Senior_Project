@@ -50,6 +50,7 @@ namespace Ecolog
         }
         public bool ValidateForm()
         {
+            valLogin = true;
             //Get Username and password
             typedUN = usernameTB.Text;
             typedPW = passwordTB.Text;
@@ -57,22 +58,25 @@ namespace Ecolog
             //Username can't ben empty
             if (usernameTB.Text == "")
             {
-                MessageBox.Show($"Username can't be blank");
+                msgLbl.Text = "Username can't be blank.";
                 valLogin = false;
 
             }
             // Password can't be empty
             if (passwordTB.Text == "")
             {
-                MessageBox.Show($"Passowrd can't be blank");
+                msgLbl.Text = "Password can't be blank.";
                 valLogin = false;
             }
             return valLogin;
         }
         private void InitializedMyControl() 
         {
+            //Clears fields set characters to blank
             passwordTB.Text = "";
             passwordTB.PasswordChar = '*';
+            valLogin = true;
+            msgLbl.Text = "";
 
         }
         public Boolean userFound(String username, String password)
@@ -87,6 +91,22 @@ namespace Ecolog
             EcoRegister toRegister = new EcoRegister();
             toRegister.ShowDialog();
             this.Close();
+        }
+
+        private void forgotBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Forgot toFogot = new Forgot();
+            toFogot.ShowDialog();
+            this.Close();
+        }
+        private void passwordTB_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue == 13)
+            {
+                // Enter Key press
+                //Do as above
+            }
         }
     }
 }

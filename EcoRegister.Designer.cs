@@ -47,7 +47,6 @@ namespace Ecolog
             this.registerBtn = new System.Windows.Forms.Button();
             this.resetBtn = new System.Windows.Forms.Button();
             this.returnBtn = new System.Windows.Forms.Button();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.msgLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -56,7 +55,7 @@ namespace Ecolog
             this.regTitleLbl.AutoSize = true;
             this.regTitleLbl.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regTitleLbl.ForeColor = System.Drawing.Color.SeaGreen;
-            this.regTitleLbl.Location = new System.Drawing.Point(113, 64);
+            this.regTitleLbl.Location = new System.Drawing.Point(114, 62);
             this.regTitleLbl.Name = "regTitleLbl";
             this.regTitleLbl.Size = new System.Drawing.Size(279, 22);
             this.regTitleLbl.TabIndex = 0;
@@ -67,7 +66,7 @@ namespace Ecolog
             this.usernameLbl.AutoSize = true;
             this.usernameLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameLbl.ForeColor = System.Drawing.Color.SeaGreen;
-            this.usernameLbl.Location = new System.Drawing.Point(127, 125);
+            this.usernameLbl.Location = new System.Drawing.Point(128, 123);
             this.usernameLbl.Name = "usernameLbl";
             this.usernameLbl.Size = new System.Drawing.Size(87, 19);
             this.usernameLbl.TabIndex = 1;
@@ -78,7 +77,7 @@ namespace Ecolog
             this.passwordLbl.AutoSize = true;
             this.passwordLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordLbl.ForeColor = System.Drawing.Color.SeaGreen;
-            this.passwordLbl.Location = new System.Drawing.Point(129, 151);
+            this.passwordLbl.Location = new System.Drawing.Point(130, 149);
             this.passwordLbl.Name = "passwordLbl";
             this.passwordLbl.Size = new System.Drawing.Size(86, 19);
             this.passwordLbl.TabIndex = 2;
@@ -89,7 +88,7 @@ namespace Ecolog
             this.confLbl.AutoSize = true;
             this.confLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.confLbl.ForeColor = System.Drawing.Color.SeaGreen;
-            this.confLbl.Location = new System.Drawing.Point(63, 174);
+            this.confLbl.Location = new System.Drawing.Point(64, 172);
             this.confLbl.Name = "confLbl";
             this.confLbl.Size = new System.Drawing.Size(151, 19);
             this.confLbl.TabIndex = 3;
@@ -100,7 +99,7 @@ namespace Ecolog
             this.emailLbl.AutoSize = true;
             this.emailLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailLbl.ForeColor = System.Drawing.Color.SeaGreen;
-            this.emailLbl.Location = new System.Drawing.Point(163, 200);
+            this.emailLbl.Location = new System.Drawing.Point(164, 198);
             this.emailLbl.Name = "emailLbl";
             this.emailLbl.Size = new System.Drawing.Size(51, 19);
             this.emailLbl.TabIndex = 4;
@@ -142,7 +141,7 @@ namespace Ecolog
             // usernameTB
             // 
             this.usernameTB.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameTB.Location = new System.Drawing.Point(235, 119);
+            this.usernameTB.Location = new System.Drawing.Point(236, 117);
             this.usernameTB.MinimumSize = new System.Drawing.Size(100, 20);
             this.usernameTB.Name = "usernameTB";
             this.usernameTB.Size = new System.Drawing.Size(150, 22);
@@ -151,7 +150,7 @@ namespace Ecolog
             // passwordTB
             // 
             this.passwordTB.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordTB.Location = new System.Drawing.Point(235, 145);
+            this.passwordTB.Location = new System.Drawing.Point(236, 143);
             this.passwordTB.MinimumSize = new System.Drawing.Size(100, 20);
             this.passwordTB.Name = "passwordTB";
             this.passwordTB.Size = new System.Drawing.Size(150, 22);
@@ -160,7 +159,7 @@ namespace Ecolog
             // confirmTB
             // 
             this.confirmTB.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmTB.Location = new System.Drawing.Point(235, 171);
+            this.confirmTB.Location = new System.Drawing.Point(236, 169);
             this.confirmTB.MinimumSize = new System.Drawing.Size(100, 20);
             this.confirmTB.Name = "confirmTB";
             this.confirmTB.Size = new System.Drawing.Size(150, 22);
@@ -235,16 +234,6 @@ namespace Ecolog
             this.returnBtn.UseVisualStyleBackColor = true;
             this.returnBtn.Click += new System.EventHandler(this.returnBtn_Click);
             // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(235, 303);
-            this.progressBar1.Minimum = 1;
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(100, 23);
-            this.progressBar1.Step = 7;
-            this.progressBar1.TabIndex = 18;
-            this.progressBar1.Value = 1;
-            // 
             // msgLbl
             // 
             this.msgLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -263,7 +252,6 @@ namespace Ecolog
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(484, 461);
             this.Controls.Add(this.msgLbl);
-            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.returnBtn);
             this.Controls.Add(this.resetBtn);
             this.Controls.Add(this.registerBtn);
@@ -312,7 +300,6 @@ namespace Ecolog
         private System.Windows.Forms.Button registerBtn;
         private System.Windows.Forms.Button resetBtn;
         private System.Windows.Forms.Button returnBtn;
-        private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label msgLbl;
     }
 }
