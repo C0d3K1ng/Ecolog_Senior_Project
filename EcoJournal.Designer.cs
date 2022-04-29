@@ -90,7 +90,7 @@ namespace Ecolog
             this.dietGroupBox.Controls.Add(this.veganRB);
             this.dietGroupBox.Controls.Add(this.dietLbl);
             this.dietGroupBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dietGroupBox.Location = new System.Drawing.Point(12, 123);
+            this.dietGroupBox.Location = new System.Drawing.Point(18, 83);
             this.dietGroupBox.Name = "dietGroupBox";
             this.dietGroupBox.Size = new System.Drawing.Size(388, 159);
             this.dietGroupBox.TabIndex = 0;
@@ -162,7 +162,7 @@ namespace Ecolog
             this.recycleGroupBox.Controls.Add(this.recycleQuestionLbl);
             this.recycleGroupBox.Controls.Add(this.recycleLbl);
             this.recycleGroupBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.recycleGroupBox.Location = new System.Drawing.Point(12, 288);
+            this.recycleGroupBox.Location = new System.Drawing.Point(18, 248);
             this.recycleGroupBox.Name = "recycleGroupBox";
             this.recycleGroupBox.Size = new System.Drawing.Size(388, 165);
             this.recycleGroupBox.TabIndex = 1;
@@ -272,7 +272,7 @@ namespace Ecolog
             this.travelGroupBox.Controls.Add(this.walkTextBox);
             this.travelGroupBox.Controls.Add(this.walkLbl);
             this.travelGroupBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.travelGroupBox.Location = new System.Drawing.Point(12, 459);
+            this.travelGroupBox.Location = new System.Drawing.Point(18, 419);
             this.travelGroupBox.Name = "travelGroupBox";
             this.travelGroupBox.Size = new System.Drawing.Size(388, 165);
             this.travelGroupBox.TabIndex = 2;
@@ -385,7 +385,7 @@ namespace Ecolog
             this.homeGroupBox.Controls.Add(this.gasHomeRB);
             this.homeGroupBox.Controls.Add(this.homePowerLabel);
             this.homeGroupBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homeGroupBox.Location = new System.Drawing.Point(12, 628);
+            this.homeGroupBox.Location = new System.Drawing.Point(18, 588);
             this.homeGroupBox.Name = "homeGroupBox";
             this.homeGroupBox.Size = new System.Drawing.Size(388, 103);
             this.homeGroupBox.TabIndex = 3;
@@ -462,11 +462,11 @@ namespace Ecolog
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.ForeColor = System.Drawing.Color.Lime;
-            this.titleLabel.Location = new System.Drawing.Point(150, 9);
+            this.titleLabel.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.ForeColor = System.Drawing.Color.ForestGreen;
+            this.titleLabel.Location = new System.Drawing.Point(130, 9);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(97, 19);
+            this.titleLabel.Size = new System.Drawing.Size(165, 32);
             this.titleLabel.TabIndex = 4;
             this.titleLabel.Text = "EcoJournal";
             // 
@@ -474,7 +474,7 @@ namespace Ecolog
             // 
             this.explanationLabel.AutoSize = true;
             this.explanationLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.explanationLabel.Location = new System.Drawing.Point(22, 84);
+            this.explanationLabel.Location = new System.Drawing.Point(28, 44);
             this.explanationLabel.Name = "explanationLabel";
             this.explanationLabel.Size = new System.Drawing.Size(353, 32);
             this.explanationLabel.TabIndex = 5;
@@ -486,7 +486,7 @@ namespace Ecolog
             this.buttongroupBox.Controls.Add(this.backButton);
             this.buttongroupBox.Controls.Add(this.clearButton);
             this.buttongroupBox.Controls.Add(this.enterJournalBtn);
-            this.buttongroupBox.Location = new System.Drawing.Point(12, 737);
+            this.buttongroupBox.Location = new System.Drawing.Point(18, 697);
             this.buttongroupBox.Name = "buttongroupBox";
             this.buttongroupBox.Size = new System.Drawing.Size(388, 62);
             this.buttongroupBox.TabIndex = 6;
@@ -536,33 +536,36 @@ namespace Ecolog
             // 
             // msgLbl
             // 
-            this.msgLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.msgLbl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.msgLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.msgLbl.ForeColor = System.Drawing.Color.Red;
-            this.msgLbl.Location = new System.Drawing.Point(122, 28);
+            this.msgLbl.Location = new System.Drawing.Point(262, 762);
             this.msgLbl.MinimumSize = new System.Drawing.Size(150, 20);
             this.msgLbl.Name = "msgLbl";
-            this.msgLbl.Size = new System.Drawing.Size(150, 23);
+            this.msgLbl.Size = new System.Drawing.Size(150, 25);
             this.msgLbl.TabIndex = 7;
+            this.msgLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // testTotal
             // 
             this.testTotal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.testTotal.AutoSize = true;
             this.testTotal.BackColor = System.Drawing.Color.Transparent;
+            this.testTotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.testTotal.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.testTotal.ForeColor = System.Drawing.Color.Red;
-            this.testTotal.Location = new System.Drawing.Point(131, 51);
-            this.testTotal.MaximumSize = new System.Drawing.Size(200, 30);
+            this.testTotal.ForeColor = System.Drawing.Color.White;
+            this.testTotal.Location = new System.Drawing.Point(12, 762);
             this.testTotal.MinimumSize = new System.Drawing.Size(150, 20);
             this.testTotal.Name = "testTotal";
             this.testTotal.Size = new System.Drawing.Size(150, 20);
             this.testTotal.TabIndex = 8;
+            this.testTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // EcoJournal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(424, 811);
             this.Controls.Add(this.testTotal);
             this.Controls.Add(this.msgLbl);

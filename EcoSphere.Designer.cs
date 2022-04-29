@@ -48,20 +48,21 @@ namespace Ecolog
             // titlelLbl
             // 
             this.titlelLbl.AutoSize = true;
-            this.titlelLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titlelLbl.ForeColor = System.Drawing.Color.SeaGreen;
-            this.titlelLbl.Location = new System.Drawing.Point(198, 19);
+            this.titlelLbl.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titlelLbl.ForeColor = System.Drawing.Color.ForestGreen;
+            this.titlelLbl.Location = new System.Drawing.Point(162, 16);
             this.titlelLbl.Name = "titlelLbl";
-            this.titlelLbl.Size = new System.Drawing.Size(94, 19);
+            this.titlelLbl.Size = new System.Drawing.Size(158, 32);
             this.titlelLbl.TabIndex = 0;
             this.titlelLbl.Text = "EcoSphere";
             // 
             // epaLbl
             // 
             this.epaLbl.AutoSize = true;
+            this.epaLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.epaLbl.Location = new System.Drawing.Point(41, 130);
             this.epaLbl.Name = "epaLbl";
-            this.epaLbl.Size = new System.Drawing.Size(158, 13);
+            this.epaLbl.Size = new System.Drawing.Size(192, 16);
             this.epaLbl.TabIndex = 1;
             this.epaLbl.TabStop = true;
             this.epaLbl.Text = "Enviromental Protection Agency";
@@ -70,9 +71,10 @@ namespace Ecolog
             // ipccLbl
             // 
             this.ipccLbl.AutoSize = true;
+            this.ipccLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ipccLbl.Location = new System.Drawing.Point(105, 238);
             this.ipccLbl.Name = "ipccLbl";
-            this.ipccLbl.Size = new System.Drawing.Size(31, 13);
+            this.ipccLbl.Size = new System.Drawing.Size(38, 16);
             this.ipccLbl.TabIndex = 2;
             this.ipccLbl.TabStop = true;
             this.ipccLbl.Text = "IPCC";
@@ -81,9 +83,10 @@ namespace Ecolog
             // projectlbl
             // 
             this.projectlbl.AutoSize = true;
+            this.projectlbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.projectlbl.Location = new System.Drawing.Point(68, 318);
             this.projectlbl.Name = "projectlbl";
-            this.projectlbl.Size = new System.Drawing.Size(105, 13);
+            this.projectlbl.Size = new System.Drawing.Size(125, 16);
             this.projectlbl.TabIndex = 3;
             this.projectlbl.TabStop = true;
             this.projectlbl.Text = "Project Drawn Down";
@@ -93,7 +96,8 @@ namespace Ecolog
             // 
             this.expLbl.AutoSize = true;
             this.expLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.expLbl.Location = new System.Drawing.Point(78, 48);
+            this.expLbl.ForeColor = System.Drawing.Color.ForestGreen;
+            this.expLbl.Location = new System.Drawing.Point(55, 48);
             this.expLbl.Name = "expLbl";
             this.expLbl.Size = new System.Drawing.Size(371, 32);
             this.expLbl.TabIndex = 5;
@@ -102,33 +106,46 @@ namespace Ecolog
             // 
             // shareBtn
             // 
-            this.shareBtn.Location = new System.Drawing.Point(71, 408);
+            this.shareBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.shareBtn.Enabled = false;
+            this.shareBtn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shareBtn.ForeColor = System.Drawing.Color.ForestGreen;
+            this.shareBtn.Location = new System.Drawing.Point(13, 405);
             this.shareBtn.Name = "shareBtn";
             this.shareBtn.Padding = new System.Windows.Forms.Padding(10);
-            this.shareBtn.Size = new System.Drawing.Size(100, 40);
+            this.shareBtn.Size = new System.Drawing.Size(100, 54);
             this.shareBtn.TabIndex = 6;
             this.shareBtn.Text = "Share";
-            this.shareBtn.UseVisualStyleBackColor = true;
+            this.shareBtn.UseVisualStyleBackColor = false;
+            this.shareBtn.Visible = false;
             // 
             // compareBtn
             // 
-            this.compareBtn.Location = new System.Drawing.Point(168, 408);
+            this.compareBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.compareBtn.Enabled = false;
+            this.compareBtn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.compareBtn.ForeColor = System.Drawing.Color.ForestGreen;
+            this.compareBtn.Location = new System.Drawing.Point(119, 405);
             this.compareBtn.Name = "compareBtn";
             this.compareBtn.Padding = new System.Windows.Forms.Padding(10);
-            this.compareBtn.Size = new System.Drawing.Size(100, 40);
+            this.compareBtn.Size = new System.Drawing.Size(100, 54);
             this.compareBtn.TabIndex = 7;
             this.compareBtn.Text = "Compare";
-            this.compareBtn.UseVisualStyleBackColor = true;
+            this.compareBtn.UseVisualStyleBackColor = false;
+            this.compareBtn.Visible = false;
             // 
             // backBtn
             // 
-            this.backBtn.Location = new System.Drawing.Point(261, 408);
+            this.backBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.backBtn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backBtn.ForeColor = System.Drawing.Color.ForestGreen;
+            this.backBtn.Location = new System.Drawing.Point(236, 405);
             this.backBtn.Name = "backBtn";
             this.backBtn.Padding = new System.Windows.Forms.Padding(10);
-            this.backBtn.Size = new System.Drawing.Size(100, 40);
+            this.backBtn.Size = new System.Drawing.Size(100, 54);
             this.backBtn.TabIndex = 8;
             this.backBtn.Text = "Back";
-            this.backBtn.UseVisualStyleBackColor = true;
+            this.backBtn.UseVisualStyleBackColor = false;
             this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 
             // pictureBox2
@@ -140,6 +157,7 @@ namespace Ecolog
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.WaitOnLoad = true;
             // 
             // pictureBox1
             // 
@@ -150,6 +168,7 @@ namespace Ecolog
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.WaitOnLoad = true;
             // 
             // epaPicBox
             // 
@@ -160,12 +179,13 @@ namespace Ecolog
             this.epaPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.epaPicBox.TabIndex = 9;
             this.epaPicBox.TabStop = false;
+            this.epaPicBox.WaitOnLoad = true;
             // 
             // EcoSphere
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(484, 461);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -178,6 +198,7 @@ namespace Ecolog
             this.Controls.Add(this.ipccLbl);
             this.Controls.Add(this.epaLbl);
             this.Controls.Add(this.titlelLbl);
+            this.Enabled = false;
             this.MinimumSize = new System.Drawing.Size(500, 500);
             this.Name = "EcoSphere";
             this.Padding = new System.Windows.Forms.Padding(10);

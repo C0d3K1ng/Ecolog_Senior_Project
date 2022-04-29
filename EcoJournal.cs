@@ -183,14 +183,18 @@ namespace Ecolog
             travelFP = walkEM + bikeEM + carEM + planeEM;
             // Home radiobuttons
             // run through to check for dollar bill
-            char dollars = '$';
-            char negative = '-';
-            char period = '.';
-            string moneyPattern = @"^[$\-.][0-9]$";
-            eBillVal = double.TryParse(ebillTextBox.Text, out lightBill);
+            //Get rid of Bad characters
+            string ebillUnformatted = ebillTextBox.Text;
+            // Input Validation
+            //Characters to be removed
+            char[] remover = { '$', ',', '-' }; //Bad Characters
+            string ebillFormatted = ebillUnformatted.Trim(remover);
+            
+          
+            eBillVal = double.TryParse(ebillFormatted, out lightBill);
             if (gasHomeRB.Checked)
             {
-                if (ebillTextBox.Text != "" && lightBill >= 0)
+                if (ebillFormatted.Length != 0 && lightBill >= 0)
                 {
                     
                     homeFP = footprint.gasPowerEmissions(lightBill);
@@ -200,14 +204,14 @@ namespace Ecolog
             }
             if (coalHomeRB.Checked)
             {
-                if(ebillTextBox.Text != "" && lightBill >= 0)
+                if(ebillFormatted.Length != 0 && lightBill >= 0)
                 {
                     homeFP = footprint.gasPowerEmissions(lightBill);
                 }
             }
             if (solarHomeRB.Checked || windHomeRB.Checked)
             {
-                if (ebillTextBox.Text != "" && lightBill >= 0)
+                if (ebillFormatted.Length != 0 && lightBill >= 0)
                 {
                     homeFP = footprint.greenPowerEmissions(lightBill);
                 }
@@ -242,8 +246,9 @@ namespace Ecolog
             metalTextBox.Text = "";
             plasticTextBox.Text = "";
             recycleNoRB.Select();
-            
+
             //Transportation
+            walkTextBox.Text = "";
             planetextBox.Text = "";
             biketextBox.Text = "";
             driveTextBox.Text = "";

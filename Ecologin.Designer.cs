@@ -45,7 +45,7 @@ namespace Ecolog
             // 
             this.titleLabel.AutoSize = true;
             this.titleLabel.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.ForeColor = System.Drawing.Color.SeaGreen;
+            this.titleLabel.ForeColor = System.Drawing.Color.ForestGreen;
             this.titleLabel.Location = new System.Drawing.Point(193, 33);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(123, 37);
@@ -56,7 +56,7 @@ namespace Ecolog
             // 
             this.usernameLabel.AutoSize = true;
             this.usernameLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameLabel.ForeColor = System.Drawing.Color.SeaGreen;
+            this.usernameLabel.ForeColor = System.Drawing.Color.ForestGreen;
             this.usernameLabel.Location = new System.Drawing.Point(127, 74);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(72, 16);
@@ -67,7 +67,7 @@ namespace Ecolog
             // 
             this.passwordLabel.AutoSize = true;
             this.passwordLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordLabel.ForeColor = System.Drawing.Color.SeaGreen;
+            this.passwordLabel.ForeColor = System.Drawing.Color.ForestGreen;
             this.passwordLabel.Location = new System.Drawing.Point(127, 103);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(69, 16);
@@ -94,10 +94,11 @@ namespace Ecolog
             // 
             this.loginButton.BackColor = System.Drawing.SystemColors.Control;
             this.loginButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginButton.ForeColor = System.Drawing.Color.Navy;
-            this.loginButton.Location = new System.Drawing.Point(77, 167);
+            this.loginButton.ForeColor = System.Drawing.Color.ForestGreen;
+            this.loginButton.Location = new System.Drawing.Point(34, 167);
+            this.loginButton.MinimumSize = new System.Drawing.Size(100, 20);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(75, 23);
+            this.loginButton.Size = new System.Drawing.Size(100, 25);
             this.loginButton.TabIndex = 5;
             this.loginButton.Text = "Log&in";
             this.loginButton.UseVisualStyleBackColor = false;
@@ -107,10 +108,11 @@ namespace Ecolog
             // 
             this.registerBtn.BackColor = System.Drawing.SystemColors.Control;
             this.registerBtn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registerBtn.ForeColor = System.Drawing.Color.Navy;
-            this.registerBtn.Location = new System.Drawing.Point(159, 167);
+            this.registerBtn.ForeColor = System.Drawing.Color.ForestGreen;
+            this.registerBtn.Location = new System.Drawing.Point(134, 167);
+            this.registerBtn.MinimumSize = new System.Drawing.Size(100, 20);
             this.registerBtn.Name = "registerBtn";
-            this.registerBtn.Size = new System.Drawing.Size(75, 23);
+            this.registerBtn.Size = new System.Drawing.Size(100, 25);
             this.registerBtn.TabIndex = 6;
             this.registerBtn.Text = "Re&gister";
             this.registerBtn.UseVisualStyleBackColor = false;
@@ -120,10 +122,11 @@ namespace Ecolog
             // 
             this.forgotBtn.BackColor = System.Drawing.SystemColors.Control;
             this.forgotBtn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.forgotBtn.ForeColor = System.Drawing.Color.Navy;
-            this.forgotBtn.Location = new System.Drawing.Point(241, 167);
+            this.forgotBtn.ForeColor = System.Drawing.Color.ForestGreen;
+            this.forgotBtn.Location = new System.Drawing.Point(234, 167);
+            this.forgotBtn.MinimumSize = new System.Drawing.Size(100, 20);
             this.forgotBtn.Name = "forgotBtn";
-            this.forgotBtn.Size = new System.Drawing.Size(75, 23);
+            this.forgotBtn.Size = new System.Drawing.Size(100, 25);
             this.forgotBtn.TabIndex = 7;
             this.forgotBtn.Text = "Forgot Password";
             this.forgotBtn.UseVisualStyleBackColor = false;
@@ -133,10 +136,11 @@ namespace Ecolog
             // 
             this.exitBtn.BackColor = System.Drawing.SystemColors.Control;
             this.exitBtn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitBtn.ForeColor = System.Drawing.Color.Navy;
-            this.exitBtn.Location = new System.Drawing.Point(323, 167);
+            this.exitBtn.ForeColor = System.Drawing.Color.ForestGreen;
+            this.exitBtn.Location = new System.Drawing.Point(334, 167);
+            this.exitBtn.MinimumSize = new System.Drawing.Size(100, 20);
             this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(75, 23);
+            this.exitBtn.Size = new System.Drawing.Size(100, 25);
             this.exitBtn.TabIndex = 8;
             this.exitBtn.Text = "E&xit";
             this.exitBtn.UseVisualStyleBackColor = false;
@@ -158,7 +162,7 @@ namespace Ecolog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(484, 211);
             this.Controls.Add(this.msgLbl);
             this.Controls.Add(this.exitBtn);
