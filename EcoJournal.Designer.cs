@@ -90,7 +90,7 @@ namespace Ecolog
             this.dietGroupBox.Controls.Add(this.veganRB);
             this.dietGroupBox.Controls.Add(this.dietLbl);
             this.dietGroupBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dietGroupBox.Location = new System.Drawing.Point(12, 123);
+            this.dietGroupBox.Location = new System.Drawing.Point(18, 83);
             this.dietGroupBox.Name = "dietGroupBox";
             this.dietGroupBox.Size = new System.Drawing.Size(388, 159);
             this.dietGroupBox.TabIndex = 0;
@@ -162,7 +162,7 @@ namespace Ecolog
             this.recycleGroupBox.Controls.Add(this.recycleQuestionLbl);
             this.recycleGroupBox.Controls.Add(this.recycleLbl);
             this.recycleGroupBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.recycleGroupBox.Location = new System.Drawing.Point(12, 288);
+            this.recycleGroupBox.Location = new System.Drawing.Point(18, 248);
             this.recycleGroupBox.Name = "recycleGroupBox";
             this.recycleGroupBox.Size = new System.Drawing.Size(388, 165);
             this.recycleGroupBox.TabIndex = 1;
@@ -190,7 +190,7 @@ namespace Ecolog
             this.plasticTextBox.Location = new System.Drawing.Point(114, 102);
             this.plasticTextBox.Name = "plasticTextBox";
             this.plasticTextBox.Size = new System.Drawing.Size(100, 22);
-            this.plasticTextBox.TabIndex = 7;
+            this.plasticTextBox.TabIndex = 8;
             // 
             // plasticLbl
             // 
@@ -206,7 +206,7 @@ namespace Ecolog
             this.glasstextBox.Location = new System.Drawing.Point(114, 78);
             this.glasstextBox.Name = "glasstextBox";
             this.glasstextBox.Size = new System.Drawing.Size(100, 22);
-            this.glasstextBox.TabIndex = 5;
+            this.glasstextBox.TabIndex = 7;
             // 
             // glassLbl
             // 
@@ -224,7 +224,7 @@ namespace Ecolog
             this.recycleNoRB.Location = new System.Drawing.Point(164, 61);
             this.recycleNoRB.Name = "recycleNoRB";
             this.recycleNoRB.Size = new System.Drawing.Size(42, 20);
-            this.recycleNoRB.TabIndex = 3;
+            this.recycleNoRB.TabIndex = 6;
             this.recycleNoRB.TabStop = true;
             this.recycleNoRB.Text = "No";
             this.recycleNoRB.UseVisualStyleBackColor = true;
@@ -235,7 +235,7 @@ namespace Ecolog
             this.recycleYesRB.Location = new System.Drawing.Point(114, 61);
             this.recycleYesRB.Name = "recycleYesRB";
             this.recycleYesRB.Size = new System.Drawing.Size(48, 20);
-            this.recycleYesRB.TabIndex = 2;
+            this.recycleYesRB.TabIndex = 5;
             this.recycleYesRB.Text = "Yes";
             this.recycleYesRB.UseVisualStyleBackColor = true;
             // 
@@ -272,7 +272,7 @@ namespace Ecolog
             this.travelGroupBox.Controls.Add(this.walkTextBox);
             this.travelGroupBox.Controls.Add(this.walkLbl);
             this.travelGroupBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.travelGroupBox.Location = new System.Drawing.Point(12, 459);
+            this.travelGroupBox.Location = new System.Drawing.Point(18, 419);
             this.travelGroupBox.Name = "travelGroupBox";
             this.travelGroupBox.Size = new System.Drawing.Size(388, 165);
             this.travelGroupBox.TabIndex = 2;
@@ -284,7 +284,7 @@ namespace Ecolog
             this.planetextBox.Location = new System.Drawing.Point(261, 127);
             this.planetextBox.Name = "planetextBox";
             this.planetextBox.Size = new System.Drawing.Size(100, 22);
-            this.planetextBox.TabIndex = 10;
+            this.planetextBox.TabIndex = 15;
             // 
             // planeLbl
             // 
@@ -301,7 +301,7 @@ namespace Ecolog
             this.electricRB.Location = new System.Drawing.Point(276, 106);
             this.electricRB.Name = "electricRB";
             this.electricRB.Size = new System.Drawing.Size(70, 20);
-            this.electricRB.TabIndex = 8;
+            this.electricRB.TabIndex = 14;
             this.electricRB.Text = "Electric";
             this.electricRB.UseVisualStyleBackColor = true;
             // 
@@ -312,7 +312,7 @@ namespace Ecolog
             this.gasCarRB.Location = new System.Drawing.Point(225, 106);
             this.gasCarRB.Name = "gasCarRB";
             this.gasCarRB.Size = new System.Drawing.Size(50, 20);
-            this.gasCarRB.TabIndex = 7;
+            this.gasCarRB.TabIndex = 13;
             this.gasCarRB.TabStop = true;
             this.gasCarRB.Text = "Gas";
             this.gasCarRB.UseVisualStyleBackColor = true;
@@ -331,7 +331,7 @@ namespace Ecolog
             this.driveTextBox.Location = new System.Drawing.Point(222, 78);
             this.driveTextBox.Name = "driveTextBox";
             this.driveTextBox.Size = new System.Drawing.Size(100, 22);
-            this.driveTextBox.TabIndex = 5;
+            this.driveTextBox.TabIndex = 12;
             // 
             // driveLbl
             // 
@@ -347,7 +347,7 @@ namespace Ecolog
             this.biketextBox.Location = new System.Drawing.Point(222, 52);
             this.biketextBox.Name = "biketextBox";
             this.biketextBox.Size = new System.Drawing.Size(100, 22);
-            this.biketextBox.TabIndex = 3;
+            this.biketextBox.TabIndex = 11;
             // 
             // bikeMiles
             // 
@@ -363,7 +363,7 @@ namespace Ecolog
             this.walkTextBox.Location = new System.Drawing.Point(220, 23);
             this.walkTextBox.Name = "walkTextBox";
             this.walkTextBox.Size = new System.Drawing.Size(100, 22);
-            this.walkTextBox.TabIndex = 1;
+            this.walkTextBox.TabIndex = 10;
             // 
             // walkLbl
             // 
@@ -385,7 +385,7 @@ namespace Ecolog
             this.homeGroupBox.Controls.Add(this.gasHomeRB);
             this.homeGroupBox.Controls.Add(this.homePowerLabel);
             this.homeGroupBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homeGroupBox.Location = new System.Drawing.Point(12, 628);
+            this.homeGroupBox.Location = new System.Drawing.Point(18, 588);
             this.homeGroupBox.Name = "homeGroupBox";
             this.homeGroupBox.Size = new System.Drawing.Size(388, 103);
             this.homeGroupBox.TabIndex = 3;
@@ -397,7 +397,7 @@ namespace Ecolog
             this.ebillTextBox.Location = new System.Drawing.Point(245, 57);
             this.ebillTextBox.Name = "ebillTextBox";
             this.ebillTextBox.Size = new System.Drawing.Size(100, 22);
-            this.ebillTextBox.TabIndex = 6;
+            this.ebillTextBox.TabIndex = 21;
             // 
             // energyBillLabel
             // 
@@ -414,7 +414,7 @@ namespace Ecolog
             this.windHomeRB.Location = new System.Drawing.Point(173, 37);
             this.windHomeRB.Name = "windHomeRB";
             this.windHomeRB.Size = new System.Drawing.Size(56, 20);
-            this.windHomeRB.TabIndex = 4;
+            this.windHomeRB.TabIndex = 20;
             this.windHomeRB.Text = "Wind";
             this.windHomeRB.UseVisualStyleBackColor = true;
             // 
@@ -424,7 +424,7 @@ namespace Ecolog
             this.solarHomeRB.Location = new System.Drawing.Point(122, 37);
             this.solarHomeRB.Name = "solarHomeRB";
             this.solarHomeRB.Size = new System.Drawing.Size(56, 20);
-            this.solarHomeRB.TabIndex = 3;
+            this.solarHomeRB.TabIndex = 19;
             this.solarHomeRB.Text = "Solar";
             this.solarHomeRB.UseVisualStyleBackColor = true;
             // 
@@ -434,7 +434,7 @@ namespace Ecolog
             this.coalHomeRB.Location = new System.Drawing.Point(69, 36);
             this.coalHomeRB.Name = "coalHomeRB";
             this.coalHomeRB.Size = new System.Drawing.Size(52, 20);
-            this.coalHomeRB.TabIndex = 2;
+            this.coalHomeRB.TabIndex = 18;
             this.coalHomeRB.Text = "Coal";
             this.coalHomeRB.UseVisualStyleBackColor = true;
             // 
@@ -445,7 +445,7 @@ namespace Ecolog
             this.gasHomeRB.Location = new System.Drawing.Point(19, 36);
             this.gasHomeRB.Name = "gasHomeRB";
             this.gasHomeRB.Size = new System.Drawing.Size(50, 20);
-            this.gasHomeRB.TabIndex = 1;
+            this.gasHomeRB.TabIndex = 16;
             this.gasHomeRB.TabStop = true;
             this.gasHomeRB.Text = "Gas";
             this.gasHomeRB.UseVisualStyleBackColor = true;
@@ -462,11 +462,11 @@ namespace Ecolog
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.ForeColor = System.Drawing.Color.Lime;
-            this.titleLabel.Location = new System.Drawing.Point(150, 9);
+            this.titleLabel.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.ForeColor = System.Drawing.Color.ForestGreen;
+            this.titleLabel.Location = new System.Drawing.Point(130, 9);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(97, 19);
+            this.titleLabel.Size = new System.Drawing.Size(165, 32);
             this.titleLabel.TabIndex = 4;
             this.titleLabel.Text = "EcoJournal";
             // 
@@ -474,7 +474,7 @@ namespace Ecolog
             // 
             this.explanationLabel.AutoSize = true;
             this.explanationLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.explanationLabel.Location = new System.Drawing.Point(22, 84);
+            this.explanationLabel.Location = new System.Drawing.Point(28, 44);
             this.explanationLabel.Name = "explanationLabel";
             this.explanationLabel.Size = new System.Drawing.Size(353, 32);
             this.explanationLabel.TabIndex = 5;
@@ -486,7 +486,7 @@ namespace Ecolog
             this.buttongroupBox.Controls.Add(this.backButton);
             this.buttongroupBox.Controls.Add(this.clearButton);
             this.buttongroupBox.Controls.Add(this.enterJournalBtn);
-            this.buttongroupBox.Location = new System.Drawing.Point(12, 737);
+            this.buttongroupBox.Location = new System.Drawing.Point(18, 697);
             this.buttongroupBox.Name = "buttongroupBox";
             this.buttongroupBox.Size = new System.Drawing.Size(388, 62);
             this.buttongroupBox.TabIndex = 6;
@@ -495,71 +495,77 @@ namespace Ecolog
             // backButton
             // 
             this.backButton.BackColor = System.Drawing.Color.White;
-            this.backButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backButton.ForeColor = System.Drawing.Color.SeaGreen;
             this.backButton.Location = new System.Drawing.Point(261, 19);
             this.backButton.MinimumSize = new System.Drawing.Size(100, 20);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(100, 25);
-            this.backButton.TabIndex = 2;
-            this.backButton.Text = "Back";
+            this.backButton.TabIndex = 24;
+            this.backButton.Text = "Bac&k";
             this.backButton.UseVisualStyleBackColor = false;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // clearButton
             // 
             this.clearButton.BackColor = System.Drawing.Color.White;
-            this.clearButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearButton.ForeColor = System.Drawing.Color.SeaGreen;
             this.clearButton.Location = new System.Drawing.Point(139, 19);
             this.clearButton.MinimumSize = new System.Drawing.Size(100, 20);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(100, 25);
-            this.clearButton.TabIndex = 1;
-            this.clearButton.Text = "Clear";
+            this.clearButton.TabIndex = 23;
+            this.clearButton.Text = "Clea&r";
             this.clearButton.UseVisualStyleBackColor = false;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // enterJournalBtn
             // 
             this.enterJournalBtn.BackColor = System.Drawing.Color.White;
-            this.enterJournalBtn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enterJournalBtn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enterJournalBtn.ForeColor = System.Drawing.Color.SeaGreen;
             this.enterJournalBtn.Location = new System.Drawing.Point(13, 19);
             this.enterJournalBtn.MinimumSize = new System.Drawing.Size(100, 20);
             this.enterJournalBtn.Name = "enterJournalBtn";
             this.enterJournalBtn.Size = new System.Drawing.Size(100, 25);
-            this.enterJournalBtn.TabIndex = 0;
-            this.enterJournalBtn.Text = "Enter Journal";
+            this.enterJournalBtn.TabIndex = 22;
+            this.enterJournalBtn.Text = "Ent&er Journal";
             this.enterJournalBtn.UseVisualStyleBackColor = false;
             this.enterJournalBtn.Click += new System.EventHandler(this.enterJournalBtn_Click);
             // 
             // msgLbl
             // 
-            this.msgLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.msgLbl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.msgLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.msgLbl.ForeColor = System.Drawing.Color.Red;
-            this.msgLbl.Location = new System.Drawing.Point(122, 28);
+            this.msgLbl.Location = new System.Drawing.Point(262, 762);
             this.msgLbl.MinimumSize = new System.Drawing.Size(150, 20);
             this.msgLbl.Name = "msgLbl";
-            this.msgLbl.Size = new System.Drawing.Size(150, 23);
+            this.msgLbl.Size = new System.Drawing.Size(150, 25);
             this.msgLbl.TabIndex = 7;
+            this.msgLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // testTotal
             // 
+            this.testTotal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.testTotal.AutoSize = true;
             this.testTotal.BackColor = System.Drawing.Color.Transparent;
+            this.testTotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.testTotal.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.testTotal.ForeColor = System.Drawing.Color.Red;
-            this.testTotal.Location = new System.Drawing.Point(131, 51);
+            this.testTotal.ForeColor = System.Drawing.Color.White;
+            this.testTotal.Location = new System.Drawing.Point(12, 762);
             this.testTotal.MinimumSize = new System.Drawing.Size(150, 20);
             this.testTotal.Name = "testTotal";
-            this.testTotal.Size = new System.Drawing.Size(150, 23);
+            this.testTotal.Size = new System.Drawing.Size(150, 20);
             this.testTotal.TabIndex = 8;
+            this.testTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // EcoJournal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(424, 811);
             this.Controls.Add(this.testTotal);
             this.Controls.Add(this.msgLbl);

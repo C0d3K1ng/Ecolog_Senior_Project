@@ -21,7 +21,13 @@ namespace Ecolog
         private void resetBtn_Click(object sender, EventArgs e)
         {
             //Clear Textfields or set to default
-
+            usernameTB.Text = usernameUP;
+            passwordTB.Text = "";
+            confirmTB.Text = "";
+            emailTB.Text = "";
+            fnameTB.Text = "";
+            lnameTB.Text = "";
+            zipTB.Text = "";
         }
         private void CurrentValues()
         {

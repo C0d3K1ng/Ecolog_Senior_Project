@@ -60,7 +60,10 @@ namespace Ecolog
         /// <param name="e"></param>
         private void updateAccountbtn_Click(object sender, EventArgs e)
         {
-
+            this.Enabled = false;
+            UpdateAccount toUpdate = new UpdateAccount();
+            toUpdate.ShowDialog();
+            //this.Close();
         }
     }
 }

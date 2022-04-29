@@ -85,6 +85,8 @@ namespace Ecolog
             this.expLbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.expLbl.AutoSize = true;
             this.expLbl.BackColor = System.Drawing.Color.Transparent;
+            this.expLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.expLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.expLbl.Location = new System.Drawing.Point(6, 11);
             this.expLbl.Name = "expLbl";
             this.expLbl.Size = new System.Drawing.Size(221, 32);
@@ -93,12 +95,14 @@ namespace Ecolog
             // 
             // sendCodeBtn
             // 
+            this.sendCodeBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.sendCodeBtn.ForeColor = System.Drawing.Color.ForestGreen;
             this.sendCodeBtn.Location = new System.Drawing.Point(322, 55);
             this.sendCodeBtn.Name = "sendCodeBtn";
             this.sendCodeBtn.Size = new System.Drawing.Size(115, 23);
             this.sendCodeBtn.TabIndex = 2;
             this.sendCodeBtn.Text = "Send Code";
-            this.sendCodeBtn.UseVisualStyleBackColor = true;
+            this.sendCodeBtn.UseVisualStyleBackColor = false;
             this.sendCodeBtn.Click += new System.EventHandler(this.sendCodeBtn_Click);
             // 
             // emailTB
@@ -111,6 +115,8 @@ namespace Ecolog
             // emailLbl
             // 
             this.emailLbl.AutoSize = true;
+            this.emailLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.emailLbl.Location = new System.Drawing.Point(119, 59);
             this.emailLbl.Name = "emailLbl";
             this.emailLbl.Size = new System.Drawing.Size(41, 16);
@@ -132,12 +138,14 @@ namespace Ecolog
             // 
             // rstpwLbl
             // 
+            this.rstpwLbl.BackColor = System.Drawing.SystemColors.Control;
+            this.rstpwLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.rstpwLbl.Location = new System.Drawing.Point(322, 41);
             this.rstpwLbl.Name = "rstpwLbl";
             this.rstpwLbl.Size = new System.Drawing.Size(115, 23);
             this.rstpwLbl.TabIndex = 6;
             this.rstpwLbl.Text = "Reset Password";
-            this.rstpwLbl.UseVisualStyleBackColor = true;
+            this.rstpwLbl.UseVisualStyleBackColor = false;
             // 
             // confirmTB
             // 
@@ -150,6 +158,8 @@ namespace Ecolog
             // confPWLbl
             // 
             this.confPWLbl.AutoSize = true;
+            this.confPWLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confPWLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.confPWLbl.Location = new System.Drawing.Point(58, 57);
             this.confPWLbl.Name = "confPWLbl";
             this.confPWLbl.Size = new System.Drawing.Size(113, 16);
@@ -167,6 +177,8 @@ namespace Ecolog
             // newPwLbl
             // 
             this.newPwLbl.AutoSize = true;
+            this.newPwLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newPwLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.newPwLbl.Location = new System.Drawing.Point(77, 24);
             this.newPwLbl.Name = "newPwLbl";
             this.newPwLbl.Size = new System.Drawing.Size(94, 16);
@@ -176,6 +188,8 @@ namespace Ecolog
             // codeLbl
             // 
             this.codeLbl.AutoSize = true;
+            this.codeLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.codeLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.codeLbl.Location = new System.Drawing.Point(85, 53);
             this.codeLbl.Name = "codeLbl";
             this.codeLbl.Size = new System.Drawing.Size(86, 16);
@@ -192,12 +206,14 @@ namespace Ecolog
             // 
             // codeBtn
             // 
+            this.codeBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.codeBtn.ForeColor = System.Drawing.Color.ForestGreen;
             this.codeBtn.Location = new System.Drawing.Point(322, 53);
             this.codeBtn.Name = "codeBtn";
             this.codeBtn.Size = new System.Drawing.Size(115, 23);
             this.codeBtn.TabIndex = 2;
             this.codeBtn.Text = "Confirm Code";
-            this.codeBtn.UseVisualStyleBackColor = true;
+            this.codeBtn.UseVisualStyleBackColor = false;
             this.codeBtn.Click += new System.EventHandler(this.codeBtn_Click);
             // 
             // codeGrpBox
@@ -216,6 +232,8 @@ namespace Ecolog
             // 
             this.codeExpLbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.codeExpLbl.BackColor = System.Drawing.Color.Transparent;
+            this.codeExpLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.codeExpLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.codeExpLbl.Location = new System.Drawing.Point(6, 4);
             this.codeExpLbl.Name = "codeExpLbl";
             this.codeExpLbl.Size = new System.Drawing.Size(262, 43);
@@ -224,12 +242,14 @@ namespace Ecolog
             // 
             // backBtn
             // 
+            this.backBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.backBtn.ForeColor = System.Drawing.Color.ForestGreen;
             this.backBtn.Location = new System.Drawing.Point(191, 426);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(102, 23);
             this.backBtn.TabIndex = 4;
             this.backBtn.Text = "Back";
-            this.backBtn.UseVisualStyleBackColor = true;
+            this.backBtn.UseVisualStyleBackColor = false;
             this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 
             // msgLbl
@@ -246,7 +266,7 @@ namespace Ecolog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(484, 461);
             this.Controls.Add(this.msgLbl);
             this.Controls.Add(this.backBtn);

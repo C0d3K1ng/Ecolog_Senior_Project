@@ -51,35 +51,44 @@ namespace Ecolog
             // 
             // returnBtn
             // 
-            this.returnBtn.Location = new System.Drawing.Point(320, 346);
+            this.returnBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.returnBtn.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.returnBtn.ForeColor = System.Drawing.Color.ForestGreen;
+            this.returnBtn.Location = new System.Drawing.Point(300, 337);
             this.returnBtn.MinimumSize = new System.Drawing.Size(75, 20);
             this.returnBtn.Name = "returnBtn";
             this.returnBtn.Size = new System.Drawing.Size(100, 25);
             this.returnBtn.TabIndex = 35;
             this.returnBtn.Text = "Retu&rn";
-            this.returnBtn.UseVisualStyleBackColor = true;
+            this.returnBtn.UseVisualStyleBackColor = false;
             this.returnBtn.Click += new System.EventHandler(this.returnBtn_Click);
             // 
             // resetBtn
             // 
-            this.resetBtn.Location = new System.Drawing.Point(214, 346);
+            this.resetBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.resetBtn.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetBtn.ForeColor = System.Drawing.Color.ForestGreen;
+            this.resetBtn.Location = new System.Drawing.Point(194, 337);
             this.resetBtn.MinimumSize = new System.Drawing.Size(75, 20);
             this.resetBtn.Name = "resetBtn";
             this.resetBtn.Size = new System.Drawing.Size(100, 25);
             this.resetBtn.TabIndex = 34;
             this.resetBtn.Text = "Re&set";
-            this.resetBtn.UseVisualStyleBackColor = true;
+            this.resetBtn.UseVisualStyleBackColor = false;
             this.resetBtn.Click += new System.EventHandler(this.resetBtn_Click);
             // 
             // updateBtn
             // 
-            this.updateBtn.Location = new System.Drawing.Point(108, 346);
+            this.updateBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.updateBtn.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateBtn.ForeColor = System.Drawing.Color.ForestGreen;
+            this.updateBtn.Location = new System.Drawing.Point(88, 337);
             this.updateBtn.MinimumSize = new System.Drawing.Size(75, 20);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(100, 25);
             this.updateBtn.TabIndex = 33;
             this.updateBtn.Text = "Updat&e";
-            this.updateBtn.UseVisualStyleBackColor = true;
+            this.updateBtn.UseVisualStyleBackColor = false;
             // 
             // zipTB
             // 
@@ -141,6 +150,7 @@ namespace Ecolog
             this.usernameTB.Location = new System.Drawing.Point(236, 113);
             this.usernameTB.MinimumSize = new System.Drawing.Size(100, 20);
             this.usernameTB.Name = "usernameTB";
+            this.usernameTB.ReadOnly = true;
             this.usernameTB.Size = new System.Drawing.Size(150, 22);
             this.usernameTB.TabIndex = 26;
             // 
@@ -148,7 +158,7 @@ namespace Ecolog
             // 
             this.zipLbl.AutoSize = true;
             this.zipLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.zipLbl.ForeColor = System.Drawing.Color.SeaGreen;
+            this.zipLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.zipLbl.Location = new System.Drawing.Point(137, 279);
             this.zipLbl.Name = "zipLbl";
             this.zipLbl.Size = new System.Drawing.Size(77, 19);
@@ -159,7 +169,7 @@ namespace Ecolog
             // 
             this.lnameLbl.AutoSize = true;
             this.lnameLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnameLbl.ForeColor = System.Drawing.Color.SeaGreen;
+            this.lnameLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.lnameLbl.Location = new System.Drawing.Point(125, 246);
             this.lnameLbl.Name = "lnameLbl";
             this.lnameLbl.Size = new System.Drawing.Size(90, 19);
@@ -170,7 +180,7 @@ namespace Ecolog
             // 
             this.fnameLbl.AutoSize = true;
             this.fnameLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fnameLbl.ForeColor = System.Drawing.Color.SeaGreen;
+            this.fnameLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.fnameLbl.Location = new System.Drawing.Point(124, 221);
             this.fnameLbl.Name = "fnameLbl";
             this.fnameLbl.Size = new System.Drawing.Size(91, 19);
@@ -181,7 +191,7 @@ namespace Ecolog
             // 
             this.emailLbl.AutoSize = true;
             this.emailLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailLbl.ForeColor = System.Drawing.Color.SeaGreen;
+            this.emailLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.emailLbl.Location = new System.Drawing.Point(164, 194);
             this.emailLbl.Name = "emailLbl";
             this.emailLbl.Size = new System.Drawing.Size(51, 19);
@@ -192,7 +202,7 @@ namespace Ecolog
             // 
             this.confLbl.AutoSize = true;
             this.confLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confLbl.ForeColor = System.Drawing.Color.SeaGreen;
+            this.confLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.confLbl.Location = new System.Drawing.Point(64, 168);
             this.confLbl.Name = "confLbl";
             this.confLbl.Size = new System.Drawing.Size(151, 19);
@@ -203,7 +213,7 @@ namespace Ecolog
             // 
             this.passwordLbl.AutoSize = true;
             this.passwordLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordLbl.ForeColor = System.Drawing.Color.SeaGreen;
+            this.passwordLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.passwordLbl.Location = new System.Drawing.Point(130, 145);
             this.passwordLbl.Name = "passwordLbl";
             this.passwordLbl.Size = new System.Drawing.Size(86, 19);
@@ -214,7 +224,7 @@ namespace Ecolog
             // 
             this.usernameLbl.AutoSize = true;
             this.usernameLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameLbl.ForeColor = System.Drawing.Color.SeaGreen;
+            this.usernameLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.usernameLbl.Location = new System.Drawing.Point(128, 119);
             this.usernameLbl.Name = "usernameLbl";
             this.usernameLbl.Size = new System.Drawing.Size(87, 19);
@@ -224,11 +234,11 @@ namespace Ecolog
             // updateTltLbl
             // 
             this.updateTltLbl.AutoSize = true;
-            this.updateTltLbl.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateTltLbl.ForeColor = System.Drawing.Color.SeaGreen;
-            this.updateTltLbl.Location = new System.Drawing.Point(154, 58);
+            this.updateTltLbl.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateTltLbl.ForeColor = System.Drawing.Color.ForestGreen;
+            this.updateTltLbl.Location = new System.Drawing.Point(119, 59);
             this.updateTltLbl.Name = "updateTltLbl";
-            this.updateTltLbl.Size = new System.Drawing.Size(210, 22);
+            this.updateTltLbl.Size = new System.Drawing.Size(301, 32);
             this.updateTltLbl.TabIndex = 18;
             this.updateTltLbl.Text = "Update Your Account \r\n";
             // 
@@ -236,7 +246,7 @@ namespace Ecolog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(484, 461);
             this.Controls.Add(this.returnBtn);
             this.Controls.Add(this.resetBtn);

@@ -61,5 +61,41 @@ namespace Ecolog
             lastLogB = lastLog;
             return lastLogB;
         }
+        public double OffsetCal(double average, double lastLog)
+        {
+            //Take the difference between the last log and average
+            //Set the values
+            avgA = average;
+
+            lastLogA = lastLog;
+            // Subtracts the average from the last log
+            offsetB = lastLog - avgA;
+            return offsetB;
+        }
+        //returns a message based of offset
+        public string Progress(double offset) 
+        {
+            string status;
+            offsetA = offset;
+            //Last log would be greater than average
+            if (offsetA >= 0.50)
+            {
+                status = "CARBON POSITIVE: Better Luck next time.";
+            }
+            // Last log would be less than average
+            else if (offsetA <= -0.50)
+            {
+                status = "CARBON NEGATIVE: Good Job.";
+            }
+            else if (offsetA < 0.50 && offsetA > -0.50) 
+            {
+                status = "CARBON NEUTRAL: Okay";
+            }
+            else 
+            {
+                status = "ERROR CALCULATING OFFSET";
+            }
+            return status;
+        }
     }
 }
