@@ -54,7 +54,7 @@ namespace Ecolog
             this.returnBtn.BackColor = System.Drawing.SystemColors.Control;
             this.returnBtn.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.returnBtn.ForeColor = System.Drawing.Color.ForestGreen;
-            this.returnBtn.Location = new System.Drawing.Point(300, 337);
+            this.returnBtn.Location = new System.Drawing.Point(300, 324);
             this.returnBtn.MinimumSize = new System.Drawing.Size(75, 20);
             this.returnBtn.Name = "returnBtn";
             this.returnBtn.Size = new System.Drawing.Size(100, 25);
@@ -68,7 +68,7 @@ namespace Ecolog
             this.resetBtn.BackColor = System.Drawing.SystemColors.Control;
             this.resetBtn.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resetBtn.ForeColor = System.Drawing.Color.ForestGreen;
-            this.resetBtn.Location = new System.Drawing.Point(194, 337);
+            this.resetBtn.Location = new System.Drawing.Point(194, 324);
             this.resetBtn.MinimumSize = new System.Drawing.Size(75, 20);
             this.resetBtn.Name = "resetBtn";
             this.resetBtn.Size = new System.Drawing.Size(100, 25);
@@ -82,7 +82,7 @@ namespace Ecolog
             this.updateBtn.BackColor = System.Drawing.SystemColors.Control;
             this.updateBtn.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateBtn.ForeColor = System.Drawing.Color.ForestGreen;
-            this.updateBtn.Location = new System.Drawing.Point(88, 337);
+            this.updateBtn.Location = new System.Drawing.Point(88, 324);
             this.updateBtn.MinimumSize = new System.Drawing.Size(75, 20);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(100, 25);
@@ -247,7 +247,7 @@ namespace Ecolog
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(484, 461);
+            this.ClientSize = new System.Drawing.Size(484, 361);
             this.Controls.Add(this.returnBtn);
             this.Controls.Add(this.resetBtn);
             this.Controls.Add(this.updateBtn);
@@ -266,7 +266,7 @@ namespace Ecolog
             this.Controls.Add(this.passwordLbl);
             this.Controls.Add(this.usernameLbl);
             this.Controls.Add(this.updateTltLbl);
-            this.MinimumSize = new System.Drawing.Size(500, 500);
+            this.MinimumSize = new System.Drawing.Size(500, 400);
             this.Name = "UpdateAccount";
             this.Text = "UpdateAccount";
             this.ResumeLayout(false);

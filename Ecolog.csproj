@@ -71,6 +71,12 @@
   <ItemGroup>
     <Compile Include="AddUser.cs" />
     <Compile Include="Calculator.cs" />
+    <Compile Include="EcoData.cs" />
+    <Compile Include="EcoDataDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EcoDataDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="EcoJournal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +157,17 @@
     <EmbeddedResource Include="UpdateAccount.resx">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="EcoDataDataSet.xsc">
+      <DependentUpon>EcoDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EcoDataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EcoDataDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EcoDataDataSet.xss">
+      <DependentUpon>EcoDataDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

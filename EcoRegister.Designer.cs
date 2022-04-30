@@ -29,6 +29,7 @@ namespace Ecolog
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.regTitleLbl = new System.Windows.Forms.Label();
             this.usernameLbl = new System.Windows.Forms.Label();
             this.passwordLbl = new System.Windows.Forms.Label();
@@ -48,6 +49,13 @@ namespace Ecolog
             this.resetBtn = new System.Windows.Forms.Button();
             this.returnBtn = new System.Windows.Forms.Button();
             this.msgLbl = new System.Windows.Forms.Label();
+            this.ecoDataDataSet = new Ecolog.EcoDataDataSet();
+            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.usersTableAdapter = new Ecolog.EcoDataDataSetTableAdapters.UsersTableAdapter();
+            this.usersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.ecoDataDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // regTitleLbl
@@ -254,6 +262,25 @@ namespace Ecolog
             this.msgLbl.Size = new System.Drawing.Size(200, 15);
             this.msgLbl.TabIndex = 19;
             // 
+            // ecoDataDataSet
+            // 
+            this.ecoDataDataSet.DataSetName = "EcoDataDataSet";
+            this.ecoDataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // usersBindingSource
+            // 
+            this.usersBindingSource.DataMember = "Users";
+            this.usersBindingSource.DataSource = this.ecoDataDataSet;
+            // 
+            // usersTableAdapter
+            // 
+            this.usersTableAdapter.ClearBeforeFill = true;
+            // 
+            // usersBindingSource1
+            // 
+            this.usersBindingSource1.DataMember = "Users";
+            this.usersBindingSource1.DataSource = this.ecoDataDataSet;
+            // 
             // EcoRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -284,6 +311,10 @@ namespace Ecolog
             this.Name = "EcoRegister";
             this.Padding = new System.Windows.Forms.Padding(10);
             this.Text = "EcoRegister";
+            this.Load += new System.EventHandler(this.EcoRegister_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ecoDataDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,5 +341,9 @@ namespace Ecolog
         private System.Windows.Forms.Button resetBtn;
         private System.Windows.Forms.Button returnBtn;
         private System.Windows.Forms.Label msgLbl;
+        private EcoDataDataSet ecoDataDataSet;
+        private System.Windows.Forms.BindingSource usersBindingSource;
+        private EcoDataDataSetTableAdapters.UsersTableAdapter usersTableAdapter;
+        private System.Windows.Forms.BindingSource usersBindingSource1;
     }
 }
