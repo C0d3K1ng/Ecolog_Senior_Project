@@ -12,6 +12,7 @@ namespace Ecolog
     class Stats
     {
         //Instance variables
+        // Enforce 2 decimal places
         // Old Values
         double avgA = 0.0, totalA = 0.0, lastLogA = 0.0, offsetA = 0.0;
         // New values B
@@ -58,7 +59,7 @@ namespace Ecolog
         public double NewLog(double lastLog) 
         {
             // Get the lastest log
-            lastLogB = lastLog;
+            lastLogB = Math.Round(lastLog,2);
             return lastLogB;
         }
         public double OffsetCal(double average, double lastLog)

@@ -219,6 +219,7 @@ namespace Ecolog
 
             //Get all the Footprints
             totalFP = dietFP + recycleFP + travelFP + homeFP;
+            totalFP = Math.Round(totalFP, 2);
             return totalFP;
 
             
@@ -271,18 +272,6 @@ namespace Ecolog
             // Footprint CurrentLog = Footprint.CurrentLog(Calculations());
            testTotal.Text = Calculations().ToString();
         }
-        /*
- private void button2_Click object sender, EventArg e)
- {
-     GetColor(radioButton1);
-     GetColor(radioButton2);
-     GetColor(radioButton3);
- }
-
- private void GetColor(radiobutton rdoButton)
- {
-     if (rdoButton.Checked)
- }
-*/
+ 
     }
 }
