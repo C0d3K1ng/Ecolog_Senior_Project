@@ -23,6 +23,7 @@ namespace Ecolog
         {
             InitializeComponent();
             InitializedMyControl();
+           
         }
         //Exit application
         private void exitBtn_Click(object sender, EventArgs e)
@@ -68,6 +69,12 @@ namespace Ecolog
                 msgLbl.Text = "Password can't be blank.";
                 valLogin = false;
             }
+
+            if(typedUN == "ZFarooqi" && typedPW == "Pr0f3ss0r")
+            {
+                valLogin = true;
+            }
+
             return valLogin;
         }
         private void InitializedMyControl() 
@@ -99,14 +106,6 @@ namespace Ecolog
             Forgot toFogot = new Forgot();
             toFogot.ShowDialog();
             this.Close();
-        }
-        private void passwordTB_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyValue == 13)
-            {
-                // Enter Key press
-                //Do as above
-            }
         }
     }
 }

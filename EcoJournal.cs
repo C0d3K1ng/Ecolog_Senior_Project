@@ -90,6 +90,10 @@ namespace Ecolog
                 if (glasstextBox.Text != "")
                 {
                     glassVal = int.TryParse(glasstextBox.Text, out glass);
+                    if(!glassVal)
+                    {
+                        msgLbl.Text = "Non-numeric glass value";
+                    }
                     if (glass >= 0)
                     {
                          glassRec = footprint.glassRecycling(glass);
@@ -103,6 +107,10 @@ namespace Ecolog
                 if (plasticTextBox.TextLength > 0)
                 {
                     plasticVal = int.TryParse(plasticTextBox.Text, out plastic);
+                    if(!plasticVal)
+                    {
+                        msgLbl.Text = "Non-numeric plastic value";
+                    }
                     if (plastic >= 0)
                     {
                        plasticRec = footprint.plasticRecycling(plastic);
@@ -150,6 +158,10 @@ namespace Ecolog
             }
 
             carVal = int.TryParse(driveTextBox.Text, out carMiles);
+            if(!carVal)
+            {
+                msgLbl.Text = "Miles Drive Invalid";
+            }
             if (carMiles >= 0)
             {
                 // Determine type of car
@@ -169,6 +181,7 @@ namespace Ecolog
 
             //Plane travel
             planeVal = int.TryParse(planetextBox.Text, out planeMiles);
+            if(planeVal)
             {
                 if(planeMiles >= 0)
                 {
@@ -178,6 +191,10 @@ namespace Ecolog
                 {
                     msgLbl.Text = "Can't fly less than 0 miles";
                 }
+            }
+            else
+            {
+                msgLbl.Text = "Miles Flown Invalid";
             }
 
             travelFP = walkEM + bikeEM + carEM + planeEM;
@@ -192,6 +209,10 @@ namespace Ecolog
             
           
             eBillVal = double.TryParse(ebillFormatted, out lightBill);
+            if(!eBillVal)
+            {
+                msgLbl.Text = "Light Bill contains invalid Characters";
+            }
             if (gasHomeRB.Checked)
             {
                 if (ebillFormatted.Length != 0 && lightBill >= 0)
@@ -270,7 +291,8 @@ namespace Ecolog
             // Send to the database
             // EcoData 
             // Footprint CurrentLog = Footprint.CurrentLog(Calculations());
-           testTotal.Text = Calculations().ToString();
+            string result = $"Footprint {Calculations()} CO2e";
+            testTotal.Text = result;
         }
  
     }

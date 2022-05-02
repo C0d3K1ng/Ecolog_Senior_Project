@@ -29,6 +29,7 @@ namespace Ecolog
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EcoSphere));
             this.titlelLbl = new System.Windows.Forms.Label();
             this.epaLbl = new System.Windows.Forms.LinkLabel();
             this.ipccLbl = new System.Windows.Forms.LinkLabel();
@@ -201,7 +202,7 @@ namespace Ecolog
             this.Controls.Add(this.ipccLbl);
             this.Controls.Add(this.epaLbl);
             this.Controls.Add(this.titlelLbl);
-            this.Enabled = false;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(500, 500);
             this.Name = "EcoSphere";
             this.Padding = new System.Windows.Forms.Padding(10);

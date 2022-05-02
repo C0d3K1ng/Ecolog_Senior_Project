@@ -29,6 +29,7 @@ namespace Ecolog
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EcoJournal));
             this.dietGroupBox = new System.Windows.Forms.GroupBox();
             this.omnivoreRB = new System.Windows.Forms.RadioButton();
             this.pesectarianRB = new System.Windows.Forms.RadioButton();
@@ -281,7 +282,7 @@ namespace Ecolog
             // 
             // planetextBox
             // 
-            this.planetextBox.Location = new System.Drawing.Point(261, 127);
+            this.planetextBox.Location = new System.Drawing.Point(222, 132);
             this.planetextBox.Name = "planetextBox";
             this.planetextBox.Size = new System.Drawing.Size(100, 22);
             this.planetextBox.TabIndex = 15;
@@ -289,16 +290,16 @@ namespace Ecolog
             // planeLbl
             // 
             this.planeLbl.AutoSize = true;
-            this.planeLbl.Location = new System.Drawing.Point(16, 123);
+            this.planeLbl.Location = new System.Drawing.Point(16, 132);
             this.planeLbl.Name = "planeLbl";
-            this.planeLbl.Size = new System.Drawing.Size(244, 16);
+            this.planeLbl.Size = new System.Drawing.Size(174, 16);
             this.planeLbl.TabIndex = 9;
-            this.planeLbl.Text = "How many miles did you travel by plane?";
+            this.planeLbl.Text = "How many miles did you fly?";
             // 
             // electricRB
             // 
             this.electricRB.AutoSize = true;
-            this.electricRB.Location = new System.Drawing.Point(276, 106);
+            this.electricRB.Location = new System.Drawing.Point(275, 106);
             this.electricRB.Name = "electricRB";
             this.electricRB.Size = new System.Drawing.Size(70, 20);
             this.electricRB.TabIndex = 14;
@@ -309,7 +310,7 @@ namespace Ecolog
             // 
             this.gasCarRB.AutoSize = true;
             this.gasCarRB.Checked = true;
-            this.gasCarRB.Location = new System.Drawing.Point(225, 106);
+            this.gasCarRB.Location = new System.Drawing.Point(219, 106);
             this.gasCarRB.Name = "gasCarRB";
             this.gasCarRB.Size = new System.Drawing.Size(50, 20);
             this.gasCarRB.TabIndex = 13;
@@ -360,7 +361,7 @@ namespace Ecolog
             // 
             // walkTextBox
             // 
-            this.walkTextBox.Location = new System.Drawing.Point(220, 23);
+            this.walkTextBox.Location = new System.Drawing.Point(222, 23);
             this.walkTextBox.Name = "walkTextBox";
             this.walkTextBox.Size = new System.Drawing.Size(100, 22);
             this.walkTextBox.TabIndex = 10;
@@ -509,6 +510,7 @@ namespace Ecolog
             // clearButton
             // 
             this.clearButton.BackColor = System.Drawing.Color.White;
+            this.clearButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.clearButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearButton.ForeColor = System.Drawing.Color.SeaGreen;
             this.clearButton.Location = new System.Drawing.Point(139, 19);
@@ -537,12 +539,12 @@ namespace Ecolog
             // msgLbl
             // 
             this.msgLbl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.msgLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.msgLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.msgLbl.ForeColor = System.Drawing.Color.Red;
-            this.msgLbl.Location = new System.Drawing.Point(262, 762);
-            this.msgLbl.MinimumSize = new System.Drawing.Size(150, 20);
+            this.msgLbl.Location = new System.Drawing.Point(212, 762);
+            this.msgLbl.MinimumSize = new System.Drawing.Size(200, 20);
             this.msgLbl.Name = "msgLbl";
-            this.msgLbl.Size = new System.Drawing.Size(150, 25);
+            this.msgLbl.Size = new System.Drawing.Size(200, 25);
             this.msgLbl.TabIndex = 7;
             this.msgLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -555,17 +557,19 @@ namespace Ecolog
             this.testTotal.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.testTotal.ForeColor = System.Drawing.Color.White;
             this.testTotal.Location = new System.Drawing.Point(12, 762);
-            this.testTotal.MinimumSize = new System.Drawing.Size(150, 20);
+            this.testTotal.MinimumSize = new System.Drawing.Size(200, 25);
             this.testTotal.Name = "testTotal";
-            this.testTotal.Size = new System.Drawing.Size(150, 20);
+            this.testTotal.Size = new System.Drawing.Size(200, 25);
             this.testTotal.TabIndex = 8;
             this.testTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // EcoJournal
             // 
+            this.AcceptButton = this.enterJournalBtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.CancelButton = this.clearButton;
             this.ClientSize = new System.Drawing.Size(424, 811);
             this.Controls.Add(this.testTotal);
             this.Controls.Add(this.msgLbl);
@@ -576,8 +580,10 @@ namespace Ecolog
             this.Controls.Add(this.travelGroupBox);
             this.Controls.Add(this.recycleGroupBox);
             this.Controls.Add(this.dietGroupBox);
-            this.MinimumSize = new System.Drawing.Size(440, 800);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(440, 850);
             this.Name = "EcoJournal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EcoJournal";
             this.dietGroupBox.ResumeLayout(false);
             this.dietGroupBox.PerformLayout();

@@ -29,6 +29,7 @@ namespace Ecolog
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EcoJourney));
             this.ecoJourneyGBX = new System.Windows.Forms.GroupBox();
             this.entriesResult = new System.Windows.Forms.Label();
             this.entriesLbl = new System.Windows.Forms.Label();
@@ -92,6 +93,7 @@ namespace Ecolog
             this.ecoJourneyGBX.Controls.Add(this.welcomeLbl);
             this.ecoJourneyGBX.Controls.Add(this.titleLbl);
             this.ecoJourneyGBX.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ecoJourneyGBX.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ecoJourneyGBX.Location = new System.Drawing.Point(50, 31);
             this.ecoJourneyGBX.Name = "ecoJourneyGBX";
             this.ecoJourneyGBX.Size = new System.Drawing.Size(707, 343);
@@ -114,10 +116,11 @@ namespace Ecolog
             // entriesLbl
             // 
             this.entriesLbl.AutoSize = true;
-            this.entriesLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.entriesLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.entriesLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.entriesLbl.Location = new System.Drawing.Point(209, 104);
             this.entriesLbl.Name = "entriesLbl";
-            this.entriesLbl.Size = new System.Drawing.Size(49, 16);
+            this.entriesLbl.Size = new System.Drawing.Size(51, 16);
             this.entriesLbl.TabIndex = 28;
             this.entriesLbl.Text = "Entries";
             // 
@@ -293,110 +296,121 @@ namespace Ecolog
             // emailLbl
             // 
             this.emailLbl.AutoSize = true;
-            this.emailLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.emailLbl.Location = new System.Drawing.Point(602, 215);
             this.emailLbl.Name = "emailLbl";
-            this.emailLbl.Size = new System.Drawing.Size(41, 16);
+            this.emailLbl.Size = new System.Drawing.Size(44, 16);
             this.emailLbl.TabIndex = 12;
             this.emailLbl.Text = "Email";
             // 
             // usernameLbl
             // 
             this.usernameLbl.AutoSize = true;
-            this.usernameLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.usernameLbl.Location = new System.Drawing.Point(69, 214);
             this.usernameLbl.Name = "usernameLbl";
-            this.usernameLbl.Size = new System.Drawing.Size(67, 16);
+            this.usernameLbl.Size = new System.Drawing.Size(72, 16);
             this.usernameLbl.TabIndex = 11;
             this.usernameLbl.Text = "Username";
             // 
             // lastNameLbl
             // 
             this.lastNameLbl.AutoSize = true;
-            this.lastNameLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastNameLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastNameLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.lastNameLbl.Location = new System.Drawing.Point(458, 215);
             this.lastNameLbl.Name = "lastNameLbl";
-            this.lastNameLbl.Size = new System.Drawing.Size(71, 16);
+            this.lastNameLbl.Size = new System.Drawing.Size(75, 16);
             this.lastNameLbl.TabIndex = 10;
             this.lastNameLbl.Text = "Last Name";
             // 
             // firstNameLbl
             // 
             this.firstNameLbl.AutoSize = true;
-            this.firstNameLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstNameLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstNameLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.firstNameLbl.Location = new System.Drawing.Point(320, 215);
             this.firstNameLbl.Name = "firstNameLbl";
-            this.firstNameLbl.Size = new System.Drawing.Size(72, 16);
+            this.firstNameLbl.Size = new System.Drawing.Size(76, 16);
             this.firstNameLbl.TabIndex = 9;
             this.firstNameLbl.Text = "First Name";
             // 
             // passwordLbl
             // 
             this.passwordLbl.AutoSize = true;
-            this.passwordLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.passwordLbl.Location = new System.Drawing.Point(201, 215);
             this.passwordLbl.Name = "passwordLbl";
-            this.passwordLbl.Size = new System.Drawing.Size(65, 16);
+            this.passwordLbl.Size = new System.Drawing.Size(69, 16);
             this.passwordLbl.TabIndex = 8;
             this.passwordLbl.Text = "Password";
             // 
             // userInfoLbl
             // 
             this.userInfoLbl.AutoSize = true;
-            this.userInfoLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userInfoLbl.Location = new System.Drawing.Point(303, 176);
+            this.userInfoLbl.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userInfoLbl.ForeColor = System.Drawing.Color.ForestGreen;
+            this.userInfoLbl.Location = new System.Drawing.Point(303, 182);
             this.userInfoLbl.Name = "userInfoLbl";
-            this.userInfoLbl.Size = new System.Drawing.Size(78, 19);
+            this.userInfoLbl.Size = new System.Drawing.Size(100, 24);
             this.userInfoLbl.TabIndex = 7;
             this.userInfoLbl.Text = "User Info";
             // 
             // avgLbl
             // 
             this.avgLbl.AutoSize = true;
-            this.avgLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.avgLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.avgLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.avgLbl.Location = new System.Drawing.Point(330, 104);
             this.avgLbl.Name = "avgLbl";
-            this.avgLbl.Size = new System.Drawing.Size(54, 16);
+            this.avgLbl.Size = new System.Drawing.Size(61, 16);
             this.avgLbl.TabIndex = 6;
             this.avgLbl.Text = "Average";
             // 
             // diffLbl
             // 
             this.diffLbl.AutoSize = true;
-            this.diffLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diffLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diffLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.diffLbl.Location = new System.Drawing.Point(591, 104);
             this.diffLbl.Name = "diffLbl";
-            this.diffLbl.Size = new System.Drawing.Size(65, 16);
+            this.diffLbl.Size = new System.Drawing.Size(73, 16);
             this.diffLbl.TabIndex = 5;
             this.diffLbl.Text = "Difference";
             // 
             // lastLogLbl
             // 
             this.lastLogLbl.AutoSize = true;
-            this.lastLogLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastLogLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastLogLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.lastLogLbl.Location = new System.Drawing.Point(464, 104);
             this.lastLogLbl.Name = "lastLogLbl";
-            this.lastLogLbl.Size = new System.Drawing.Size(58, 16);
+            this.lastLogLbl.Size = new System.Drawing.Size(62, 16);
             this.lastLogLbl.TabIndex = 4;
             this.lastLogLbl.Text = "Last Log";
             // 
             // totalLbl
             // 
             this.totalLbl.AutoSize = true;
-            this.totalLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.totalLbl.Location = new System.Drawing.Point(86, 104);
             this.totalLbl.Name = "totalLbl";
-            this.totalLbl.Size = new System.Drawing.Size(35, 16);
+            this.totalLbl.Size = new System.Drawing.Size(39, 16);
             this.totalLbl.TabIndex = 3;
             this.totalLbl.Text = "Total";
             // 
             // userStatLbl
             // 
             this.userStatLbl.AutoSize = true;
-            this.userStatLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userStatLbl.Location = new System.Drawing.Point(303, 74);
+            this.userStatLbl.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userStatLbl.ForeColor = System.Drawing.Color.ForestGreen;
+            this.userStatLbl.Location = new System.Drawing.Point(303, 80);
             this.userStatLbl.Name = "userStatLbl";
-            this.userStatLbl.Size = new System.Drawing.Size(88, 19);
+            this.userStatLbl.Size = new System.Drawing.Size(114, 24);
             this.userStatLbl.TabIndex = 2;
             this.userStatLbl.Text = "User Stats";
             // 
@@ -404,11 +418,13 @@ namespace Ecolog
             // 
             this.welcomeLbl.AutoSize = true;
             this.welcomeLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcomeLbl.Location = new System.Drawing.Point(313, 43);
+            this.welcomeLbl.ForeColor = System.Drawing.Color.ForestGreen;
+            this.welcomeLbl.Location = new System.Drawing.Point(6, 43);
             this.welcomeLbl.Name = "welcomeLbl";
-            this.welcomeLbl.Size = new System.Drawing.Size(63, 16);
+            this.welcomeLbl.Size = new System.Drawing.Size(292, 48);
             this.welcomeLbl.TabIndex = 1;
-            this.welcomeLbl.Text = "Welcome";
+            this.welcomeLbl.Text = "Welcome to your EcoJourney.\r\nThis is your Dashboard to view statistics on your \r\n" +
+    "Carbon Footprint.\r\n";
             // 
             // titleLbl
             // 
@@ -428,6 +444,7 @@ namespace Ecolog
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(784, 411);
             this.Controls.Add(this.ecoJourneyGBX);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(800, 450);
             this.Name = "EcoJourney";
             this.Text = "EcoJourney";

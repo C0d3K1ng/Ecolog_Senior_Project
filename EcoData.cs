@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
-//!!!NOTE: CONNECTIONSTRING MUST BE CHANGED ONCE EXTRACTED, FILE PATH WILL BE CHANGED!!!
+
 namespace Ecolog
 {/// <summary>
 /// Controls the database
@@ -28,8 +28,9 @@ namespace Ecolog
         
         // Footprints Total Average LastLog Offset
         double totalFP, offsetFP, lastLogFP, avgFP;
-        
+
         // SQL Objects
+        //!!!NOTE: CONNECTIONSTRING MUST BE CHANGED ONCE EXTRACTED, FILE PATH WILL BE CHANGED!!!
         SqlConnection ecoNet = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\Edwin Knight\Desktop\Senior_Project\Ecolog\EcologDB.mdf; Integrated Security = True");// Open and closes connection with connection string 
         SqlCommand ecoStat; // Executes SQL Funtions
         SqlDataReader ecoReader; // Reads back info
@@ -55,8 +56,7 @@ namespace Ecolog
             query = $"SELECT Username, Password FROM [Users] where Username ='{unED}' AND Password ='{pwED}'";
 
             ecoSDA = new SqlDataAdapter(query, ecoNet);
-                      
-            ecoDT = new DataTable();
+                     
             ecoSDA.Fill(ecoDT); // Fill the DataAdapter with the DataTable
             if(ecoDT.Rows.Count == 1) 
             {
@@ -89,8 +89,6 @@ namespace Ecolog
             // return canRegister;
             try 
             {
-
-
                 ecoStat.Connection = ecoNet; // Creation the connection
                 ecoNet.Open();
                 //Run the query
@@ -117,12 +115,24 @@ namespace Ecolog
         // Select Users
         public bool UserFound(string username) 
         {
-            foundUser = true;
+            foundUser = false;
             unED = username;
             // SELECT Username FROM Users WHERE username = {unED}
 
             ecoNet.Open();
-           
+            query = $"SELECT Username, Password FROM [Users] where Username ='{unED}'";
+
+            ecoSDA = new SqlDataAdapter(query, ecoNet);
+
+            ecoSDA.Fill(ecoDT); // Fill the DataAdapter with the DataTable
+            if(ecoDT.Rows.Count > 1)
+            {
+                foundUser = true;
+            }
+            else
+            {
+                Console.WriteLine("Username Not Found");
+            }
             ecoNet.Close();//Close the connection
             return foundUser;
         }
@@ -244,32 +254,13 @@ namespace Ecolog
             return userID;
         }
         // Insert Footprints
-        public bool UpdateFootprint(double fpEntry) 
-        {
-            bool update = false;
-            //FROM Ecojounrnal.Calculations();
-            lastLogFP = fpEntry;
-            //Now do the calculations from states
-            Stats fpStats = new Stats();
-
-            //IF not null?
-            // Run the stats class
-            
-            ecoNet.Open();
-            
-            try { } catch { }
-            //INSERT INTO [Footprint] () VALUES()
-            query = "INSERT INTO [Footprint](Total, Entries, Average, LastLog, Offset) VALUES (@Total, @Entries, @Aveage, @LastLog, @Offset)";
-            ecoNet.Close(); //Close the connection
-
-            return update;
-        }
+        // Update Footprint SET LastLog WHERE userid = '{userID}';
+        // Update Footprint SET LastLog WHERE userid = '{userID}';
+        // Update Footprint SET LastLog WHERE userid = '{userID}';
+        // Update Footprint SET  WHERE userid = '{userID}';
+        // Update Footprint SET Offset WHERE userid = '{userID}';
         // Select Footprints
-        
-        
-        
-        
-       
+
         public double TotalQuery(string username) 
         {
             //SELECT Total FROM Footprint WHERE userID = '{userID}' 
@@ -307,6 +298,9 @@ namespace Ecolog
         // Update Footprints
 
         // Delete Footprints
-        public void DeleteFootprint() { }
+        public void DeleteFootprint() 
+        {
+            // DELETE FROM Footprint WHERE UserID = @userid;
+        }
     }
 }

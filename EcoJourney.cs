@@ -5,17 +5,18 @@ namespace Ecolog
 {
     public partial class EcoJourney : Form
     {
-        String username;
-        String password;
-        String email;
-        String firstName;
-        String lastName;
-        String zipCode;
-        String total;
-        String entries;
-        String currentLog;
-        String avgPrint;
-        String offset;
+        //Default Values
+        String username = "ZFarooqi";
+        String password = "********";
+        String email = "ZFarooqi@uakron.edu";
+        String firstName = "Zarreen";
+        String lastName = "Farooqi";
+        String zipCode = "44325";
+        String total = "0.0";
+        String entries = "0";
+        String currentLog = "0.0";
+        String avgPrint = "0.0";
+        String offset = "0.0";
         public EcoJourney()
         {
             InitializeComponent();
@@ -52,6 +53,7 @@ namespace Ecolog
             this.Hide();
             EcoSphere toSphere = new EcoSphere();
             toSphere.ShowDialog();
+            this.Close();
         }
         /// <summary>
         /// Goes to update page

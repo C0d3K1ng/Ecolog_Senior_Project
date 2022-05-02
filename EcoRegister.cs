@@ -28,7 +28,7 @@ namespace Ecolog
         
         //Regular Expressions
 
-        String unPattern = @"^[a-zA-z][a-zA-z$_]{5,11}"; 
+        String unPattern = @"^[a-zA-z][a-zA-z0-9$_]{5,11}"; 
         String pwPattern = @"^(?=[^\d_].*?\d)\w(\w|[!@#$%]){7,20}";
         String emailPattern = @"(\w[-._\w]*\w@\w[-._\w]*\w\.\w{2,3})";
         String namePattern = @"(^[a-zA-z\-]{1,}$)";
