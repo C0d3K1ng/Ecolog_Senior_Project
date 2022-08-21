@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Ecolog
+﻿namespace Ecolog
 {
     /**
         Keeps track of everything, acts as though the user registers

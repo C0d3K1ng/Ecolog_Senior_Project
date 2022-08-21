@@ -1,5 +1,4 @@
-﻿
-namespace Ecolog
+﻿namespace Ecolog.Forms
 {
     partial class EcoSphere
     {
@@ -50,9 +49,9 @@ namespace Ecolog
             this.titlelLbl.AutoSize = true;
             this.titlelLbl.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titlelLbl.ForeColor = System.Drawing.Color.ForestGreen;
-            this.titlelLbl.Location = new System.Drawing.Point(162, 16);
+            this.titlelLbl.Location = new System.Drawing.Point(164, 16);
             this.titlelLbl.Name = "titlelLbl";
-            this.titlelLbl.Size = new System.Drawing.Size(158, 32);
+            this.titlelLbl.Size = new System.Drawing.Size(157, 32);
             this.titlelLbl.TabIndex = 0;
             this.titlelLbl.Text = "EcoSphere";
             // 
@@ -62,7 +61,7 @@ namespace Ecolog
             this.epaLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.epaLbl.Location = new System.Drawing.Point(41, 130);
             this.epaLbl.Name = "epaLbl";
-            this.epaLbl.Size = new System.Drawing.Size(192, 16);
+            this.epaLbl.Size = new System.Drawing.Size(191, 16);
             this.epaLbl.TabIndex = 1;
             this.epaLbl.TabStop = true;
             this.epaLbl.Text = "Enviromental Protection Agency";
@@ -74,7 +73,7 @@ namespace Ecolog
             this.ipccLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ipccLbl.Location = new System.Drawing.Point(105, 238);
             this.ipccLbl.Name = "ipccLbl";
-            this.ipccLbl.Size = new System.Drawing.Size(38, 16);
+            this.ipccLbl.Size = new System.Drawing.Size(37, 16);
             this.ipccLbl.TabIndex = 2;
             this.ipccLbl.TabStop = true;
             this.ipccLbl.Text = "IPCC";
@@ -86,7 +85,7 @@ namespace Ecolog
             this.projectlbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.projectlbl.Location = new System.Drawing.Point(68, 318);
             this.projectlbl.Name = "projectlbl";
-            this.projectlbl.Size = new System.Drawing.Size(125, 16);
+            this.projectlbl.Size = new System.Drawing.Size(124, 16);
             this.projectlbl.TabIndex = 3;
             this.projectlbl.TabStop = true;
             this.projectlbl.Text = "Project Drawn Down";
@@ -97,9 +96,9 @@ namespace Ecolog
             this.expLbl.AutoSize = true;
             this.expLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.expLbl.ForeColor = System.Drawing.Color.ForestGreen;
-            this.expLbl.Location = new System.Drawing.Point(55, 48);
+            this.expLbl.Location = new System.Drawing.Point(57, 48);
             this.expLbl.Name = "expLbl";
-            this.expLbl.Size = new System.Drawing.Size(371, 32);
+            this.expLbl.Size = new System.Drawing.Size(370, 32);
             this.expLbl.TabIndex = 5;
             this.expLbl.Text = "The Ecosphere is where you can compare and share\r\nyour Ecolog with others and lea" +
     "rn more resources below.";
@@ -141,7 +140,7 @@ namespace Ecolog
             this.backBtn.BackColor = System.Drawing.SystemColors.Control;
             this.backBtn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backBtn.ForeColor = System.Drawing.Color.ForestGreen;
-            this.backBtn.Location = new System.Drawing.Point(236, 401);
+            this.backBtn.Location = new System.Drawing.Point(371, 398);
             this.backBtn.MinimumSize = new System.Drawing.Size(100, 20);
             this.backBtn.Name = "backBtn";
             this.backBtn.Padding = new System.Windows.Forms.Padding(10);
@@ -201,7 +200,6 @@ namespace Ecolog
             this.Controls.Add(this.ipccLbl);
             this.Controls.Add(this.epaLbl);
             this.Controls.Add(this.titlelLbl);
-            this.Enabled = false;
             this.MinimumSize = new System.Drawing.Size(500, 500);
             this.Name = "EcoSphere";
             this.Padding = new System.Windows.Forms.Padding(10);

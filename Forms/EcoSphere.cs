@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ecolog
+namespace Ecolog.Forms
 {
     public partial class EcoSphere : Form
     {
@@ -20,15 +13,18 @@ namespace Ecolog
         //Goes back to EcoJournal Page
         private void backBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Hide(); // hide form
+
+            // this will solve the crashing issue
             EcoJourney toJourney = new EcoJourney();
-            toJourney.ShowDialog();
+            if (toJourney.IsDisposed == false)
+                toJourney.ShowDialog();
             this.Close();
         }
 
         private void epaLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-           //Environmental Protection Agency
+            //Environmental Protection Agency
             System.Diagnostics.Process.Start("https://www.epa.gov/");
         }
 

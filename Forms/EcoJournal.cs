@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Text.RegularExpressions;
-namespace Ecolog
+namespace Ecolog.Forms
 {
     public partial class EcoJournal : Form
     {
@@ -29,8 +21,8 @@ namespace Ecolog
          */
         public double Calculations()
         {
-            
-            
+
+
             Calculator footprint = new Calculator();
             //footprint. = glasstextBox.Text;
             /*
@@ -39,12 +31,12 @@ namespace Ecolog
                 dietary footprint which
              */
             //diet
-           
+
             if (veganRB.Checked)
             {
                 dietFP = footprint.veganImpact();
             }
-            if(vegetarianRB.Checked)
+            if (vegetarianRB.Checked)
             {
                 dietFP = footprint.vegetarianImpact();
             }
@@ -56,35 +48,31 @@ namespace Ecolog
             {
                 dietFP = footprint.meatImpact();
             }
-            //totalFP += dietFP; // Adds diet to total footprint
-
-            //Recycling
-            bool validInput = true; // flag for input fields
             //Inter inputs
             int glass = 0, plastic = 0, metal = 0, bikeMiles = 0, walkMiles = 0,
                 carMiles = 0, planeMiles = 0;
-        
+
             // Tryparse booleans
             bool glassVal = false, plasticVal = false, metalVal = false, walkVal = false,
                 bikeVal = false, carVal = false, planeVal = false, eBillVal = false;
             // CO2e Calculator doubles
             double glassRec = 0.0, plasticRec = 0.0, metalRec = 0.0, walkEM = 0.0, bikeEM = 0.0,
                 carEM = 0.0, planeEM = 0.0;
-            
+
             // LightBill
             double lightBill = 0.0;
             // No recylcing option
             double avgWaste = footprint.recylceNo();
-            if(recycleNoRB.Checked)
+            if (recycleNoRB.Checked)
             {
                 recycleFP = avgWaste;
-               
+
             }
-           
+
             //Recyling Input
             if (recycleYesRB.Checked)
             {
-               
+
 
                 // Glass Bottles
                 if (glasstextBox.Text != "")
@@ -92,7 +80,7 @@ namespace Ecolog
                     glassVal = int.TryParse(glasstextBox.Text, out glass);
                     if (glass >= 0)
                     {
-                         glassRec = footprint.glassRecycling(glass);
+                        glassRec = footprint.glassRecycling(glass);
                     }
                     else
                     {
@@ -105,18 +93,18 @@ namespace Ecolog
                     plasticVal = int.TryParse(plasticTextBox.Text, out plastic);
                     if (plastic >= 0)
                     {
-                       plasticRec = footprint.plasticRecycling(plastic);
+                        plasticRec = footprint.plasticRecycling(plastic);
                     }
                     else
                     {
                         msgLbl.Text = "Plastic can't be less than 0";
                     }
                 }
-               // Metal Cans
-               if (metalTextBox.Text != "")
+                // Metal Cans
+                if (metalTextBox.Text != "")
                 {
                     metalVal = int.TryParse(metalTextBox.Text, out metal);
-                    if (metal >= 0) 
+                    if (metal >= 0)
                     {
                         metalRec = footprint.metalRecycling(metal);
                     }
@@ -153,11 +141,11 @@ namespace Ecolog
             if (carMiles >= 0)
             {
                 // Determine type of car
-                if(gasCarRB.Checked)
+                if (gasCarRB.Checked)
                 {
                     carEM = footprint.gasCar(carMiles);
                 }
-                if(electricRB.Checked)
+                if (electricRB.Checked)
                 {
                     carEM = footprint.electricCar(carMiles);
                 }
@@ -170,7 +158,7 @@ namespace Ecolog
             //Plane travel
             planeVal = int.TryParse(planetextBox.Text, out planeMiles);
             {
-                if(planeMiles >= 0)
+                if (planeMiles >= 0)
                 {
                     planeEM = footprint.flyingEmissions(planeMiles);
                 }
@@ -189,22 +177,22 @@ namespace Ecolog
             //Characters to be removed
             char[] remover = { '$', ',', '-' }; //Bad Characters
             string ebillFormatted = ebillUnformatted.Trim(remover);
-            
-          
+
+
             eBillVal = double.TryParse(ebillFormatted, out lightBill);
             if (gasHomeRB.Checked)
             {
                 if (ebillFormatted.Length != 0 && lightBill >= 0)
                 {
-                    
+
                     homeFP = footprint.gasPowerEmissions(lightBill);
                 }
-                
+
 
             }
             if (coalHomeRB.Checked)
             {
-                if(ebillFormatted.Length != 0 && lightBill >= 0)
+                if (ebillFormatted.Length != 0 && lightBill >= 0)
                 {
                     homeFP = footprint.gasPowerEmissions(lightBill);
                 }
@@ -221,17 +209,18 @@ namespace Ecolog
             totalFP = dietFP + recycleFP + travelFP + homeFP;
             return totalFP;
 
-            
+
 
             // Get the input
-            
+
         }
 
         private void backButton_Click(object sender, EventArgs e)
         {
             this.Hide();
             EcoJourney toJourney = new EcoJourney();
-            toJourney.ShowDialog();
+            if (toJourney.IsDisposed == false)
+                toJourney.ShowDialog();
             this.Close();
         }
         /**
@@ -253,7 +242,7 @@ namespace Ecolog
             biketextBox.Text = "";
             driveTextBox.Text = "";
             gasCarRB.Select();
-            
+
             //Home
             ebillTextBox.Text = "";
             gasHomeRB.Select();
@@ -269,7 +258,7 @@ namespace Ecolog
             // Send to the database
             // EcoData 
             // Footprint CurrentLog = Footprint.CurrentLog(Calculations());
-           testTotal.Text = Calculations().ToString();
+            testTotal.Text = Calculations().ToString();
         }
         /*
  private void button2_Click object sender, EventArg e)

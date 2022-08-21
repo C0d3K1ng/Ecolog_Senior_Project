@@ -1,5 +1,4 @@
-﻿
-namespace Ecolog
+﻿namespace Ecolog.Forms
 {
     partial class Forgot
     {
@@ -62,7 +61,7 @@ namespace Ecolog
             this.fgtTltLbl.Location = new System.Drawing.Point(114, 9);
             this.fgtTltLbl.MinimumSize = new System.Drawing.Size(117, 25);
             this.fgtTltLbl.Name = "fgtTltLbl";
-            this.fgtTltLbl.Size = new System.Drawing.Size(257, 32);
+            this.fgtTltLbl.Size = new System.Drawing.Size(256, 32);
             this.fgtTltLbl.TabIndex = 0;
             this.fgtTltLbl.Text = "Forgot Password?";
             // 
@@ -72,7 +71,7 @@ namespace Ecolog
             this.fgtGrpBox.Controls.Add(this.sendCodeBtn);
             this.fgtGrpBox.Controls.Add(this.emailTB);
             this.fgtGrpBox.Controls.Add(this.emailLbl);
-            this.fgtGrpBox.Location = new System.Drawing.Point(12, 68);
+            this.fgtGrpBox.Location = new System.Drawing.Point(15, 68);
             this.fgtGrpBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.fgtGrpBox.Name = "fgtGrpBox";
             this.fgtGrpBox.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -89,7 +88,7 @@ namespace Ecolog
             this.expLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.expLbl.Location = new System.Drawing.Point(6, 11);
             this.expLbl.Name = "expLbl";
-            this.expLbl.Size = new System.Drawing.Size(221, 32);
+            this.expLbl.Size = new System.Drawing.Size(220, 32);
             this.expLbl.TabIndex = 4;
             this.expLbl.Text = "Enter your Email you receive a code.\r\n\r\n";
             // 
@@ -97,7 +96,7 @@ namespace Ecolog
             // 
             this.sendCodeBtn.BackColor = System.Drawing.SystemColors.Control;
             this.sendCodeBtn.ForeColor = System.Drawing.Color.ForestGreen;
-            this.sendCodeBtn.Location = new System.Drawing.Point(322, 55);
+            this.sendCodeBtn.Location = new System.Drawing.Point(322, 56);
             this.sendCodeBtn.Name = "sendCodeBtn";
             this.sendCodeBtn.Size = new System.Drawing.Size(115, 23);
             this.sendCodeBtn.TabIndex = 2;
@@ -119,7 +118,7 @@ namespace Ecolog
             this.emailLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.emailLbl.Location = new System.Drawing.Point(119, 59);
             this.emailLbl.Name = "emailLbl";
-            this.emailLbl.Size = new System.Drawing.Size(41, 16);
+            this.emailLbl.Size = new System.Drawing.Size(40, 16);
             this.emailLbl.TabIndex = 0;
             this.emailLbl.Text = "Email";
             // 
@@ -130,7 +129,7 @@ namespace Ecolog
             this.pwGrpBox.Controls.Add(this.confPWLbl);
             this.pwGrpBox.Controls.Add(this.newPwTB);
             this.pwGrpBox.Controls.Add(this.newPwLbl);
-            this.pwGrpBox.Location = new System.Drawing.Point(12, 314);
+            this.pwGrpBox.Location = new System.Drawing.Point(15, 314);
             this.pwGrpBox.Name = "pwGrpBox";
             this.pwGrpBox.Size = new System.Drawing.Size(454, 96);
             this.pwGrpBox.TabIndex = 3;
@@ -140,7 +139,7 @@ namespace Ecolog
             // 
             this.rstpwLbl.BackColor = System.Drawing.SystemColors.Control;
             this.rstpwLbl.ForeColor = System.Drawing.Color.ForestGreen;
-            this.rstpwLbl.Location = new System.Drawing.Point(322, 41);
+            this.rstpwLbl.Location = new System.Drawing.Point(322, 53);
             this.rstpwLbl.Name = "rstpwLbl";
             this.rstpwLbl.Size = new System.Drawing.Size(115, 23);
             this.rstpwLbl.TabIndex = 6;
@@ -162,7 +161,7 @@ namespace Ecolog
             this.confPWLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.confPWLbl.Location = new System.Drawing.Point(58, 57);
             this.confPWLbl.Name = "confPWLbl";
-            this.confPWLbl.Size = new System.Drawing.Size(113, 16);
+            this.confPWLbl.Size = new System.Drawing.Size(112, 16);
             this.confPWLbl.TabIndex = 4;
             this.confPWLbl.Text = "Confirm Password";
             // 
@@ -181,7 +180,7 @@ namespace Ecolog
             this.newPwLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.newPwLbl.Location = new System.Drawing.Point(77, 24);
             this.newPwLbl.Name = "newPwLbl";
-            this.newPwLbl.Size = new System.Drawing.Size(94, 16);
+            this.newPwLbl.Size = new System.Drawing.Size(93, 16);
             this.newPwLbl.TabIndex = 2;
             this.newPwLbl.Text = "New Password";
             // 
@@ -192,7 +191,7 @@ namespace Ecolog
             this.codeLbl.ForeColor = System.Drawing.Color.ForestGreen;
             this.codeLbl.Location = new System.Drawing.Point(85, 53);
             this.codeLbl.Name = "codeLbl";
-            this.codeLbl.Size = new System.Drawing.Size(86, 16);
+            this.codeLbl.Size = new System.Drawing.Size(85, 16);
             this.codeLbl.TabIndex = 0;
             this.codeLbl.Text = "Backup Code";
             // 
@@ -208,7 +207,7 @@ namespace Ecolog
             // 
             this.codeBtn.BackColor = System.Drawing.SystemColors.Control;
             this.codeBtn.ForeColor = System.Drawing.Color.ForestGreen;
-            this.codeBtn.Location = new System.Drawing.Point(322, 53);
+            this.codeBtn.Location = new System.Drawing.Point(322, 50);
             this.codeBtn.Name = "codeBtn";
             this.codeBtn.Size = new System.Drawing.Size(115, 23);
             this.codeBtn.TabIndex = 2;
@@ -222,7 +221,7 @@ namespace Ecolog
             this.codeGrpBox.Controls.Add(this.codeBtn);
             this.codeGrpBox.Controls.Add(this.codeTB);
             this.codeGrpBox.Controls.Add(this.codeLbl);
-            this.codeGrpBox.Location = new System.Drawing.Point(12, 191);
+            this.codeGrpBox.Location = new System.Drawing.Point(15, 191);
             this.codeGrpBox.Name = "codeGrpBox";
             this.codeGrpBox.Size = new System.Drawing.Size(454, 96);
             this.codeGrpBox.TabIndex = 2;

@@ -77,41 +77,41 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EcoDataDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="EcoJournal.cs">
+    <Compile Include="Forms\EcoJournal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EcoJournal.Designer.cs">
+    <Compile Include="Forms\EcoJournal.Designer.cs">
       <DependentUpon>EcoJournal.cs</DependentUpon>
     </Compile>
-    <Compile Include="EcoJourney.cs">
+    <Compile Include="Forms\EcoJourney.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EcoJourney.Designer.cs">
+    <Compile Include="Forms\EcoJourney.Designer.cs">
       <DependentUpon>EcoJourney.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ecologin.cs">
+    <Compile Include="Forms\Ecologin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ecologin.Designer.cs">
+    <Compile Include="Forms\Ecologin.Designer.cs">
       <DependentUpon>Ecologin.cs</DependentUpon>
     </Compile>
-    <Compile Include="EcoRegister.cs">
+    <Compile Include="Forms\EcoRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EcoRegister.Designer.cs">
+    <Compile Include="Forms\EcoRegister.Designer.cs">
       <DependentUpon>EcoRegister.cs</DependentUpon>
     </Compile>
-    <Compile Include="EcoSphere.cs">
+    <Compile Include="Forms\EcoSphere.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EcoSphere.Designer.cs">
+    <Compile Include="Forms\EcoSphere.Designer.cs">
       <DependentUpon>EcoSphere.cs</DependentUpon>
     </Compile>
     <Compile Include="Footprint.cs" />
-    <Compile Include="Forgot.cs">
+    <Compile Include="Forms\Forgot.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forgot.Designer.cs">
+    <Compile Include="Forms\Forgot.Designer.cs">
       <DependentUpon>Forgot.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper.cs" />
@@ -119,29 +119,29 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Stats.cs" />
-    <Compile Include="UpdateAccount.cs">
+    <Compile Include="Forms\UpdateAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateAccount.Designer.cs">
+    <Compile Include="Forms\UpdateAccount.Designer.cs">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
-    <EmbeddedResource Include="EcoJournal.resx">
+    <EmbeddedResource Include="Forms\EcoJournal.resx">
       <DependentUpon>EcoJournal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EcoJourney.resx">
+    <EmbeddedResource Include="Forms\EcoJourney.resx">
       <DependentUpon>EcoJourney.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ecologin.resx">
+    <EmbeddedResource Include="Forms\Ecologin.resx">
       <DependentUpon>Ecologin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EcoRegister.resx">
+    <EmbeddedResource Include="Forms\EcoRegister.resx">
       <DependentUpon>EcoRegister.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EcoSphere.resx">
+    <EmbeddedResource Include="Forms\EcoSphere.resx">
       <DependentUpon>EcoSphere.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forgot.resx">
+    <EmbeddedResource Include="Forms\Forgot.resx">
       <DependentUpon>Forgot.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -154,7 +154,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UpdateAccount.resx">
+    <EmbeddedResource Include="Forms\UpdateAccount.resx">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="EcoDataDataSet.xsc">
@@ -200,15 +200,6 @@
     <None Include="Resources\ProjectDrawdown_Logo_web.jpg" />
     <None Include="Resources\IPCC.jpg" />
     <None Include="Resources\375x250_epaseal-trim.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="EcoData.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="EcoData_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>EcoData.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

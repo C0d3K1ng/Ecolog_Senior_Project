@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ecolog
 {
@@ -17,10 +13,10 @@ namespace Ecolog
         // New values B
         double avgB = 0.0, totalB = 0.0, lastLogB = 0.0, offsetB = 0.0;
         //User ID
-        int userID = 0; 
-        
+        int userID = 0;
+
         int entriesA = 0, entriesB = 0;
-        
+
         //Make methods for queries
         //Make methods for calculations
 
@@ -44,18 +40,18 @@ namespace Ecolog
             totalB = total;
             entriesB = entries;
             //Validate that you can't divide by zero
-            if (entriesB > 0) 
+            if (entriesB > 0)
             {
                 avgB = totalB / entries;
             }
-            else 
+            else
             {
                 throw new Exception("Can't divide by zero");
             }
-            
+
             return avgB;
         }
-        public double NewLog(double lastLog) 
+        public double NewLog(double lastLog)
         {
             // Get the lastest log
             lastLogB = lastLog;
@@ -73,7 +69,7 @@ namespace Ecolog
             return offsetB;
         }
         //returns a message based of offset
-        public string Progress(double offset) 
+        public string Progress(double offset)
         {
             string status;
             offsetA = offset;
@@ -87,11 +83,11 @@ namespace Ecolog
             {
                 status = "CARBON NEGATIVE: Good Job.";
             }
-            else if (offsetA < 0.50 && offsetA > -0.50) 
+            else if (offsetA < 0.50 && offsetA > -0.50)
             {
                 status = "CARBON NEUTRAL: Okay";
             }
-            else 
+            else
             {
                 status = "ERROR CALCULATING OFFSET";
             }

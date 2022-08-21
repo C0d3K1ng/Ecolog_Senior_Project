@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Ecolog
+﻿namespace Ecolog
 {
     /*
        This class is used to calculate the weekly 
@@ -137,7 +131,7 @@ namespace Ecolog
         double kwh = 0.13; // kilo watt hour, power cost
         double eBill = 0.0; // Energy Electric Bill
         double energyFP = 0.0;
-       
+
         /// <summary>
         /// For vegan Diet
         /// </summary>
@@ -184,7 +178,7 @@ namespace Ecolog
         }
 
         // Get Ecojournal Class 
-      
+
         /// <summary>
         /// Calculates Carbon Footprint of glass bottles
         /// </summary>
@@ -246,8 +240,8 @@ namespace Ecolog
             double planeTotal = flownMiles * planeFP;
             return planeTotal;
         }
-     
-        public double gasCar(int drivenMiles) 
+
+        public double gasCar(int drivenMiles)
         {
             carMiles = drivenMiles;
             double carTotal = carMiles * gasCarFP;
@@ -260,7 +254,7 @@ namespace Ecolog
             return carTotal;
         }
         // Home footprint
-  
+
         //Energy Bill and Emissions 
         /// <summary>
         /// Gas Emission Calculation for home values
@@ -268,7 +262,7 @@ namespace Ecolog
         /// </summary>
         /// <param name="lightBill">Light bill in $ amount</param>
         /// <returns>kg/CO2e walking </returns>
-        public double gasPowerEmissions(double lightBill) 
+        public double gasPowerEmissions(double lightBill)
         {
             eBill = lightBill;
             double homeTtl = 0.0;
@@ -280,7 +274,7 @@ namespace Ecolog
         /// </summary>
         /// <param name="lightBill">$ Amount of lightbill</param>
         /// <returns>kgCO2e for coal home emissions</returns>
-        public double coalPowerEmissions(double lightBill) 
+        public double coalPowerEmissions(double lightBill)
         {
             eBill = lightBill;
             double homeTtl;
@@ -292,7 +286,7 @@ namespace Ecolog
         /// </summary>
         /// <param name="lightBill">$amount of last light bill </param>
         /// <returns>CO2e for green energy</returns>
-        public double greenPowerEmissions(double lightBill) 
+        public double greenPowerEmissions(double lightBill)
         {
             eBill = lightBill;
             double homeTtl;
@@ -300,6 +294,6 @@ namespace Ecolog
             return homeTtl;
         }
 
-        
+
     }
 }
