@@ -1,5 +1,4 @@
-﻿
-namespace Ecolog
+﻿namespace Ecolog.Forms
 {
     partial class UpdateAccount
     {
@@ -270,7 +269,6 @@ namespace Ecolog
             this.Name = "UpdateAccount";
             this.Text = "UpdateAccount";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

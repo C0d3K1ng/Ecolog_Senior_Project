@@ -1,5 +1,4 @@
-﻿
-namespace Ecolog
+﻿namespace Ecolog.Forms
 {
     partial class EcoJournal
     {
@@ -59,6 +58,7 @@ namespace Ecolog
             this.walkTextBox = new System.Windows.Forms.TextBox();
             this.walkLbl = new System.Windows.Forms.Label();
             this.homeGroupBox = new System.Windows.Forms.GroupBox();
+            this.testTotal = new System.Windows.Forms.Label();
             this.ebillTextBox = new System.Windows.Forms.TextBox();
             this.energyBillLabel = new System.Windows.Forms.Label();
             this.windHomeRB = new System.Windows.Forms.RadioButton();
@@ -73,7 +73,6 @@ namespace Ecolog
             this.clearButton = new System.Windows.Forms.Button();
             this.enterJournalBtn = new System.Windows.Forms.Button();
             this.msgLbl = new System.Windows.Forms.Label();
-            this.testTotal = new System.Windows.Forms.Label();
             this.dietGroupBox.SuspendLayout();
             this.recycleGroupBox.SuspendLayout();
             this.travelGroupBox.SuspendLayout();
@@ -260,6 +259,7 @@ namespace Ecolog
             // travelGroupBox
             // 
             this.travelGroupBox.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.travelGroupBox.Controls.Add(this.testTotal);
             this.travelGroupBox.Controls.Add(this.planetextBox);
             this.travelGroupBox.Controls.Add(this.planeLbl);
             this.travelGroupBox.Controls.Add(this.electricRB);
@@ -377,7 +377,6 @@ namespace Ecolog
             // homeGroupBox
             // 
             this.homeGroupBox.BackColor = System.Drawing.Color.Coral;
-            this.homeGroupBox.Controls.Add(this.testTotal);
             this.homeGroupBox.Controls.Add(this.ebillTextBox);
             this.homeGroupBox.Controls.Add(this.energyBillLabel);
             this.homeGroupBox.Controls.Add(this.windHomeRB);
@@ -392,6 +391,21 @@ namespace Ecolog
             this.homeGroupBox.TabIndex = 3;
             this.homeGroupBox.TabStop = false;
             this.homeGroupBox.Text = "Home";
+            // 
+            // testTotal
+            // 
+            this.testTotal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.testTotal.AutoSize = true;
+            this.testTotal.BackColor = System.Drawing.Color.Yellow;
+            this.testTotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.testTotal.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.testTotal.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.testTotal.Location = new System.Drawing.Point(238, 144);
+            this.testTotal.MinimumSize = new System.Drawing.Size(150, 20);
+            this.testTotal.Name = "testTotal";
+            this.testTotal.Size = new System.Drawing.Size(150, 20);
+            this.testTotal.TabIndex = 8;
+            this.testTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ebillTextBox
             // 
@@ -546,21 +560,6 @@ namespace Ecolog
             this.msgLbl.Size = new System.Drawing.Size(150, 25);
             this.msgLbl.TabIndex = 7;
             this.msgLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // testTotal
-            // 
-            this.testTotal.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.testTotal.AutoSize = true;
-            this.testTotal.BackColor = System.Drawing.Color.Transparent;
-            this.testTotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.testTotal.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.testTotal.ForeColor = System.Drawing.Color.White;
-            this.testTotal.Location = new System.Drawing.Point(10, 131);
-            this.testTotal.MinimumSize = new System.Drawing.Size(150, 20);
-            this.testTotal.Name = "testTotal";
-            this.testTotal.Size = new System.Drawing.Size(150, 20);
-            this.testTotal.TabIndex = 8;
-            this.testTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // EcoJournal
             // 

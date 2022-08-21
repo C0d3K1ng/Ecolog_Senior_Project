@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Text.RegularExpressions;
-namespace Ecolog
+using System.Windows.Forms;
+namespace Ecolog.Forms
 {
     public partial class EcoRegister : Form
     {
@@ -25,10 +18,10 @@ namespace Ecolog
         String fnameReg; // First Name
         String lnameReg; // Last Name
         String zipReg; // Zip code
-        
+
         //Regular Expressions
 
-        String unPattern = @"^[a-zA-z][a-zA-z$_]{5,11}"; 
+        String unPattern = @"^[a-zA-z][a-zA-z$_]{5,11}";
         String pwPattern = @"^(?=[^\d_].*?\d)\w(\w|[!@#$%]){7,20}";
         String emailPattern = @"(\w[-._\w]*\w@\w[-._\w]*\w\.\w{2,3})";
         String namePattern = @"(^[a-zA-z\-]{1,}$)";
@@ -47,10 +40,15 @@ namespace Ecolog
         private void registerBtn_Click(object sender, EventArgs e)
         {
             //Add info to data base
-            if(ValidateForm())
+            if (ValidateForm())
             {
-               // EcoJourney toJourney = new EcoJourney();
-                //toJourney.ShowDialog();
+                this.Hide(); // hide form
+
+                // this will solve the crashing issue
+                EcoJourney toJourney = new EcoJourney();
+                if (toJourney.IsDisposed == false)
+                    toJourney.ShowDialog();
+                this.Close();
             }
             ;
         } // end RegisterBtn event
@@ -58,7 +56,7 @@ namespace Ecolog
         /// Takes in Registration forms and validates it
         /// </summary>
         /// <returns>If the forms filled out correctly</returns>
-        public bool ValidateForm() 
+        public bool ValidateForm()
         {
             //Validators for registeration
             Boolean valReg = true;
@@ -178,7 +176,7 @@ namespace Ecolog
             passwordTB.PasswordChar = '*';
             confirmTB.PasswordChar = '*';
         }
-       
+
         private void resetBtn_Click(object sender, EventArgs e)
         {
             //Clear the textboxes
@@ -195,16 +193,19 @@ namespace Ecolog
         //Goes back to Login Page
         private void returnBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Hide(); // hide form
+
+            // this will solve the crashing issue
             Ecologin toLogin = new Ecologin();
-            toLogin.ShowDialog();
+            if (toLogin.IsDisposed == false)
+                toLogin.ShowDialog();
             this.Close();
         }
 
         private void EcoRegister_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'ecoDataDataSet.Users' table. You can move, or remove it, as needed.
-            this.usersTableAdapter.Fill(this.ecoDataDataSet.Users);
+            // this.usersTableAdapter.Fill(this.ecoDataDataSet.Users);
 
         }
     }

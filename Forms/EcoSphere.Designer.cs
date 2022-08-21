@@ -1,5 +1,4 @@
-﻿
-namespace Ecolog
+﻿namespace Ecolog.Forms
 {
     partial class EcoSphere
     {
@@ -201,7 +200,6 @@ namespace Ecolog
             this.Controls.Add(this.ipccLbl);
             this.Controls.Add(this.epaLbl);
             this.Controls.Add(this.titlelLbl);
-            this.Enabled = false;
             this.MinimumSize = new System.Drawing.Size(500, 500);
             this.Name = "EcoSphere";
             this.Padding = new System.Windows.Forms.Padding(10);

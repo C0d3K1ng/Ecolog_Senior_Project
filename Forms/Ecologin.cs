@@ -1,15 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows;
-using System.Windows.Input;
-namespace Ecolog
+namespace Ecolog.Forms
 {
     public partial class Ecologin : Form
     {
@@ -32,8 +24,8 @@ namespace Ecolog
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-          
-    
+
+
             if (ValidateForm())
             {
                 //Connect to the database
@@ -41,12 +33,15 @@ namespace Ecolog
                 //Takes user name and injects into the database to perform query
                 //userLogin = logAcess.GetUsers(usernameTB.Text);
                 this.Hide(); // hide form
-                EcoJourney toJourney = new EcoJourney();
-                toJourney.ShowDialog(); // Show Ecojourney Page
-                                        //this.Close();
                 Console.WriteLine("Login Successful");
-            }  
-            
+
+                // this will solve the crashing issue
+                EcoJourney toJourney = new EcoJourney();
+                if (toJourney.IsDisposed == false)
+                    toJourney.ShowDialog();
+                this.Close();
+            }
+
         }
         public bool ValidateForm()
         {
@@ -70,7 +65,7 @@ namespace Ecolog
             }
             return valLogin;
         }
-        private void InitializedMyControl() 
+        private void InitializedMyControl()
         {
             //Clears fields set characters to blank
             passwordTB.Text = "";
@@ -82,22 +77,28 @@ namespace Ecolog
         public Boolean userFound(String username, String password)
         {
             Boolean access = false;
-            
+
             return access; //
         }
         private void registerBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Hide(); // hide form
+
+            // this will solve the crashing issue
             EcoRegister toRegister = new EcoRegister();
-            toRegister.ShowDialog();
+            if (toRegister.IsDisposed == false)
+                toRegister.ShowDialog();
             this.Close();
         }
 
         private void forgotBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Hide(); // hide form
+
+            // this will solve the crashing issue
             Forgot toFogot = new Forgot();
-            toFogot.ShowDialog();
+            if (toFogot.IsDisposed == false)
+                toFogot.ShowDialog();
             this.Close();
         }
         private void passwordTB_KeyUp(object sender, KeyEventArgs e)

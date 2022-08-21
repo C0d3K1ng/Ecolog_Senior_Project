@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Ecolog
+namespace Ecolog.Forms
 {
     public partial class EcoJourney : Form
     {
@@ -35,23 +35,33 @@ namespace Ecolog
         {
             this.Hide();
             EcoJournal toJournal = new EcoJournal();
-            toJournal.ShowDialog();
-            
+            //toJournal.ShowDialog();
+            if (toJournal.IsDisposed == false)
+                toJournal.ShowDialog();
+            this.Close();
+
         }
         // Goes to Login Screen
         private void logOutBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Hide(); // hide form
+
+            // this will solve the crashing issue
             Ecologin toLogin = new Ecologin();
-            toLogin.ShowDialog();
+            if (toLogin.IsDisposed == false)
+                toLogin.ShowDialog();
             this.Close();
         }
 
         private void ecoSpherebtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Hide(); // hide form
+
+            // this will solve the crashing issue
             EcoSphere toSphere = new EcoSphere();
-            toSphere.ShowDialog();
+            if (toSphere.IsDisposed == false)
+                toSphere.ShowDialog();
+            this.Close();
         }
         /// <summary>
         /// Goes to update page
@@ -60,10 +70,15 @@ namespace Ecolog
         /// <param name="e"></param>
         private void updateAccountbtn_Click(object sender, EventArgs e)
         {
-            this.Enabled = false;
+            //this.Enabled = false;
+
+            this.Hide(); // hide form
+
+            // this will solve the crashing issue
             UpdateAccount toUpdate = new UpdateAccount();
-            toUpdate.ShowDialog();
-            //this.Close();
+            if (toUpdate.IsDisposed == false)
+                toUpdate.ShowDialog();
+            this.Close();
         }
     }
 }

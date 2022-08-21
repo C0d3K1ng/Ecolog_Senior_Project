@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-/*
+﻿/*
     Project: Ecolog
     Filename: Footprint.cs
     Author: Evan Kern
@@ -17,7 +12,7 @@ namespace Ecolog
         Class represents A user's footprint statistics 
         from database.
      */
-   public class Footprint
+    public class Footprint
     {
         //User id 
         public int userid { get; set; }
