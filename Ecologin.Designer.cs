@@ -46,7 +46,7 @@ namespace Ecolog
             this.titleLabel.AutoSize = true;
             this.titleLabel.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.ForeColor = System.Drawing.Color.ForestGreen;
-            this.titleLabel.Location = new System.Drawing.Point(193, 33);
+            this.titleLabel.Location = new System.Drawing.Point(181, 33);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(123, 37);
             this.titleLabel.TabIndex = 0;
@@ -57,9 +57,9 @@ namespace Ecolog
             this.usernameLabel.AutoSize = true;
             this.usernameLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameLabel.ForeColor = System.Drawing.Color.ForestGreen;
-            this.usernameLabel.Location = new System.Drawing.Point(127, 74);
+            this.usernameLabel.Location = new System.Drawing.Point(156, 74);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(72, 16);
+            this.usernameLabel.Size = new System.Drawing.Size(71, 16);
             this.usernameLabel.TabIndex = 1;
             this.usernameLabel.Text = "Username";
             // 
@@ -68,22 +68,22 @@ namespace Ecolog
             this.passwordLabel.AutoSize = true;
             this.passwordLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordLabel.ForeColor = System.Drawing.Color.ForestGreen;
-            this.passwordLabel.Location = new System.Drawing.Point(127, 103);
+            this.passwordLabel.Location = new System.Drawing.Point(156, 103);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(69, 16);
+            this.passwordLabel.Size = new System.Drawing.Size(68, 16);
             this.passwordLabel.TabIndex = 2;
             this.passwordLabel.Text = "Password";
             // 
             // usernameTB
             // 
-            this.usernameTB.Location = new System.Drawing.Point(200, 73);
+            this.usernameTB.Location = new System.Drawing.Point(229, 73);
             this.usernameTB.Name = "usernameTB";
             this.usernameTB.Size = new System.Drawing.Size(100, 20);
             this.usernameTB.TabIndex = 3;
             // 
             // passwordTB
             // 
-            this.passwordTB.Location = new System.Drawing.Point(200, 99);
+            this.passwordTB.Location = new System.Drawing.Point(229, 99);
             this.passwordTB.MaxLength = 32;
             this.passwordTB.Name = "passwordTB";
             this.passwordTB.Size = new System.Drawing.Size(100, 20);
@@ -95,7 +95,7 @@ namespace Ecolog
             this.loginButton.BackColor = System.Drawing.SystemColors.Control;
             this.loginButton.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginButton.ForeColor = System.Drawing.Color.ForestGreen;
-            this.loginButton.Location = new System.Drawing.Point(34, 167);
+            this.loginButton.Location = new System.Drawing.Point(30, 167);
             this.loginButton.MinimumSize = new System.Drawing.Size(100, 20);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(100, 25);
@@ -109,7 +109,7 @@ namespace Ecolog
             this.registerBtn.BackColor = System.Drawing.SystemColors.Control;
             this.registerBtn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registerBtn.ForeColor = System.Drawing.Color.ForestGreen;
-            this.registerBtn.Location = new System.Drawing.Point(134, 167);
+            this.registerBtn.Location = new System.Drawing.Point(138, 167);
             this.registerBtn.MinimumSize = new System.Drawing.Size(100, 20);
             this.registerBtn.Name = "registerBtn";
             this.registerBtn.Size = new System.Drawing.Size(100, 25);
@@ -123,7 +123,7 @@ namespace Ecolog
             this.forgotBtn.BackColor = System.Drawing.SystemColors.Control;
             this.forgotBtn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.forgotBtn.ForeColor = System.Drawing.Color.ForestGreen;
-            this.forgotBtn.Location = new System.Drawing.Point(234, 167);
+            this.forgotBtn.Location = new System.Drawing.Point(246, 167);
             this.forgotBtn.MinimumSize = new System.Drawing.Size(100, 20);
             this.forgotBtn.Name = "forgotBtn";
             this.forgotBtn.Size = new System.Drawing.Size(100, 25);
@@ -137,7 +137,7 @@ namespace Ecolog
             this.exitBtn.BackColor = System.Drawing.SystemColors.Control;
             this.exitBtn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitBtn.ForeColor = System.Drawing.Color.ForestGreen;
-            this.exitBtn.Location = new System.Drawing.Point(334, 167);
+            this.exitBtn.Location = new System.Drawing.Point(354, 167);
             this.exitBtn.MinimumSize = new System.Drawing.Size(100, 20);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(100, 25);
